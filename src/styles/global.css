@@ -1,0 +1,22 @@
+.primary-color {
+    color: #0011ff;
+}
+
+.secondary-color {
+    color: #66aaff;
+}
+
+.primary-gradient-right-left {
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,17,255,1) 100%);
+}
+
+.flex-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-central {
+    text-align: center;
+}

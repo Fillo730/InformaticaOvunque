@@ -20,3 +20,13 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,17,255,1) 100
 .text-central {
     text-align: center;
 }
+
+.disabled-link {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.gap{
+    display: flex;
+    gap: 20px;
+}

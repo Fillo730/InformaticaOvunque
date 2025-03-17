@@ -1,5 +1,6 @@
-import React from 'react'
+import '../../../styles/global.css'
 import './ArchitetturaBase.css'
+
 
 function ArchietturaBase() {
   return (
@@ -70,7 +71,10 @@ function ArchietturaBase() {
 
         <div className='container-link'>
           <a href='/blog' className='link-button'>Torna indietro</a>
-          <a href='/blog/cpu' className='link-button'>Avanti</a>
+          <div className='gap'>
+            <a href='/blog/cpu' className='link-button disabled-link' disabled>Indietro</a>
+            <a href='/blog/cpu' className='link-button'>Avanti</a>
+          </div>
         </div>
       </div>
     </>

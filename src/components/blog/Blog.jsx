@@ -18,9 +18,9 @@ function Blog() {
 
       {activeTab === "baseArchitecture" && (
         <div className='div-articles'>
-          <Article id="1" title="Archittettura di base"  
-              imageURL="https://media.geeksforgeeks.org/wp-content/uploads/basic_structure.png"/>
-          <Article id="2" title="Come funziona il processore (CPU)"
+          <Article id="1" title="Archittettura di base" path="/blog/architettura-base"
+              imageURL="https://i0.wp.com/semiengineering.com/wp-content/uploads/2018/09/Screen-Shot-2017-04-26-at-1.08.57-PM.png?ssl=1"/>
+          <Article id="2" title="Come funziona il processore (CPU)" path="/blog/cpu"
               imageURL="https://cdni.iconscout.com/illustration/premium/thumb/cpu-processor-chip-illustration-download-in-svg-png-gif-file-formats--gpu-science-technology-illustrations-2862658.png"/>
         </div>
       )}

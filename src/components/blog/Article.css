@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    cursor: pointer;
     padding: 20px;
     max-width: 350px;
     background-color: transparent; 
@@ -23,23 +22,12 @@
   
   .article-title {
     font-size: 1.5rem;
-    color: #66aaff;
     font-weight: bold;
     margin-bottom: 10px;
   }
-  
-  .articles-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #66aaff;
+
+  .article-link {
+    text-decoration: none;
+    font-size: 1.5rem;
     cursor: pointer;
-    gap: 8px;
-    font-weight: bold;
-    transition: color 0.2s;
   }
-  
-  .articles-link:hover {
-    color: #0011ff;
-  }
-  

@@ -1,8 +1,8 @@
-import '../../../styles/global.css'
-import './ArchitetturaBase.css'
+import '../../../../styles/global.css'
+import '../../../../styles/BlogPagesCss.css'
 
 
-function ArchietturaBase() {
+function ArchitetturaBase() {
   return (
     <>
       <div>
@@ -81,4 +81,4 @@ function ArchietturaBase() {
   )
 }
 
-export default ArchietturaBase;
+export default ArchitetturaBase;

@@ -1,0 +1,17 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+  
+.section-title {
+    border-bottom: 2px solid #66aaff;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.content-paragraph {
+    line-height: 1.6;
+    font-size: 20px;
+}

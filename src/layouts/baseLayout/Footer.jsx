@@ -3,8 +3,8 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <div className='footer-container primary-background-color text-central'>
-        <p className='text-white'>
+    <div className='footer-container text-central primary-gradient-right-left'>
+        <p className='primary-color'>
             @InformaticaOvunque 2025
         </p>
     </div>

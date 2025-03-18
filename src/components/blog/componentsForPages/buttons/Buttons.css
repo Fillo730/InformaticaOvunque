@@ -1,0 +1,25 @@
+.container-link {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.link-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #66aaff;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.link-button:hover {
+  background-color: #0011ff; 
+  transform: scale(1.05);
+}

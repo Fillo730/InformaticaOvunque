@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import './SwiperComponent.css'
 import '../../../../styles/global.css'
 import Paragraph from '../paragraph/Paragraph';
-import Picture from '../image/Picture';
+import List from '../list/List';
 
 function SwiperComponent({ slides }) {
   return (
@@ -23,7 +23,7 @@ function SwiperComponent({ slides }) {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <Paragraph title={slide.title} text={slide.text}>
-              <Picture path={slide.image} altText={slide.alt}/>
+              {slide.list ? <List listElements={slide.list}/>: ""}
             </Paragraph>
           </SwiperSlide>
         ))}

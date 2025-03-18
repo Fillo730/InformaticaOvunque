@@ -2,6 +2,10 @@
     color: #0011ff;
 }
 
+.primary-background-color {
+    background-color: #0011ff;
+}
+
 .secondary-color {
     color: #66aaff;
 }
@@ -19,6 +23,10 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,17,255,1) 100
 
 .text-central {
     text-align: center;
+}
+
+.text-white{
+    color: #ffffff;
 }
 
 .disabled-link {

@@ -49,7 +49,7 @@
 
 .greetings-container {
     width: 70%;
-    border-top: 2px solid #66aaff;
+    border-top: solid 2px #66aaff;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -62,4 +62,29 @@
     font-size: 28px;
     line-height: 1.5;
     margin-right: 100px;
+}
+
+.curiosity-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.curiosity-title {
+  border-top: solid 2px #66aaff;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.curiosity-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
 }

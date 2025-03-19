@@ -80,7 +80,7 @@ function Cpu() {
             <List listElements={executionCycleSteps} />
         </Paragraph>
 
-        <Buttons goBackButtonDisabled={false} backPath="/blog/architettura-base" nextPath="/blog/cpu-advanced"/>
+        <Buttons goBackButtonDisabled={false} backPath="/blog/architettura-base" nextPath="/blog/cpu-pipeline"/>
     </>
   )
 }

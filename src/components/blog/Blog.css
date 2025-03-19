@@ -15,6 +15,10 @@ button:hover {
   transform: scale(1.05);
 }
 
+.tabs-container {
+  margin-top: 30px;
+}
+
 .div-articles {
   display: flex;
   flex-wrap: wrap; 

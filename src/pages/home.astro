@@ -1,6 +1,6 @@
 ---
 import HomeLayout from "../layouts/baseLayout/HomeLayout"
-
+import Home from "../components/home/Home"
 ---
 
 <html lang="it">
@@ -11,7 +11,7 @@ import HomeLayout from "../layouts/baseLayout/HomeLayout"
   </head>
   <body>
 	<HomeLayout>
-		<h1>Ciao</h1>
+		<Home client:only="react"/>
 	</HomeLayout>
   </body>
 </html>

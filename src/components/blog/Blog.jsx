@@ -7,11 +7,7 @@ function Blog() {
 
   return (
     <>
-      <div>
-        <h1 className='text-central primary-color'>L'informatica come non l'hai mai vista</h1>
-      </div>
-
-      <div className='text-central'>
+      <div className='tabs-container text-central'>
         <button onClick={() => setActiveTab('baseArchitecture')}>Componenti di un computer</button>
         <button onClick={() => setActiveTab('operativeSystems')}>Sistemi Operativi</button>
       </div>

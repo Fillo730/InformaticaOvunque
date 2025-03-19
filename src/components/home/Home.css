@@ -46,4 +46,20 @@
     position: relative;
     z-index: 2;
 }
-  
+
+.greetings-container {
+    width: 70%;
+    border-top: 2px solid #66aaff;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.greetings-container-text {
+    font-size: 28px;
+    line-height: 1.5;
+    margin-right: 100px;
+}

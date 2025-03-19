@@ -1,12 +1,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import FloatingCirclesWithChildren from '../../animations/FloatingCirclesWithChildren';
-import { image } from 'framer-motion/client';
 import '../../styles/global.css'
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './Home.css'
+import CollisionButton from '../generalComponents/button/CollisionButton';
 
 export default function Home() {
   const quotes = [
@@ -69,6 +69,17 @@ export default function Home() {
         
         ))}
       </Swiper>
+        <div className='greetings-container'>
+          <div>
+            <h1 className='primary-color text-central'>Benvenuto a Informatica Ovunque</h1>
+            <p className='greetings-container-text'>
+              E se ti facessi vedere che l'informatica è alla <label>portata di tutti</label> e che potresti imparare tantissime 
+              cose nuove cosa mi diresti? Come? Sono pazzo? Bhè, non credermi sulla parola e scoprilo tu stesso
+            </p>
+          </div>
+          <CollisionButton path="/blog" text="Scopri di più"/>
+        </div>
+        
       </FloatingCirclesWithChildren>
     </>
   );

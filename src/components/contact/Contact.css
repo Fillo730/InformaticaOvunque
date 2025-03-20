@@ -2,14 +2,12 @@
     font-size: 2.5rem;
     color: #0011ff;
     text-align: center;
-    margin-bottom: 20px;
     font-weight: bold;
   }
   
   .p-text {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: 'Times New Roman', Times, serif;
-    color: #66aaff;
   }
   
   .div-text {
@@ -21,13 +19,19 @@
   }
   
   .h3-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #0011ff;
     font-weight: bold;
-    margin-top: 20px;
   }
   
   strong {
     color: #0011ff;
   }
+
+  .icon {
+    margin-right: 8px;
+    vertical-align: middle;
+    color: #0011ff;
+  }
+  
   

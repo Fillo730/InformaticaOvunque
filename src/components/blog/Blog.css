@@ -23,9 +23,9 @@ button:hover {
   display: flex;
   flex-wrap: wrap; 
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 75px;
   gap: 40px;
-  
+  row-gap: 75px;
 }
 
 h2 {

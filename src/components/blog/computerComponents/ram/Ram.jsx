@@ -22,7 +22,7 @@ function Ram() {
   return (
     <>
         <div>
-            <h1 className="text-central primary-color">4: La Memoria RAM</h1>
+            <h1 className="text-central primary-color">3: La Memoria RAM</h1>
         </div>
 
         <Paragraph title="Cos'è la RAM?" 
@@ -49,7 +49,8 @@ function Ram() {
           ]} />
         </Paragraph>
 
-        <Buttons goBackButtonDisabled={false} backPath="/blog/cpu" nextPath="/blog/storage"/>
+        <Buttons goBackButtonDisabled={false} backPath="/blog/componenti-computer/cpu-pipeline" 
+          nextPath="/blog/rom"/>
     </>
   )
 }

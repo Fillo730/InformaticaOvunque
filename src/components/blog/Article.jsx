@@ -2,15 +2,16 @@ import './Article.css';
 import '../../styles/global.css'
 import CollisionButton from '../generalComponents/button/CollisionButton';
 
-
-function Article({ id, title, path, imageURL }) {
+function Article({ id, title, path, text}) {
   return (
-    <div className="article-container">
-      <img src={imageURL} alt={title} className="article-image" />
-      <p className="article-title primary-color">
-        {id}: {title}
-      </p>
-      <CollisionButton path={path} text="Leggi di più"/>
+    <div className="card">
+      <div className="content">
+        <p class="para">
+          <h3>{id}: {title}</h3>
+          {text}
+        </p>
+        <CollisionButton path={path} text="Leggi di più"/>
+      </div>
     </div>
   );
 }

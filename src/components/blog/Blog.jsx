@@ -5,7 +5,7 @@ import Article from './Article';
 import './Blog.css';
 
 function Blog() {
-  const [activeTab, setActiveTab] = useState('baseArchitecture');
+  const [activeTab, setActiveTab] = useState('concettiFondamentali');
 
   return (
     <>

@@ -54,7 +54,7 @@ const curiosities = [
     frontText: "Perché i colori RGB sono usati nei monitor?",
     backTitle: "RGB e la visione umana",
     backText: "I monitor usano il modello RGB (Rosso, Verde, Blu) perché corrisponde ai tre tipi di coni sensoriali nell'occhio umano, permettendo di creare milioni di colori." 
-  }
+  },
 ];
 
 export default curiosities;

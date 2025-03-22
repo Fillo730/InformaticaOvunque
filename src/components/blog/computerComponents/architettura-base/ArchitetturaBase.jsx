@@ -65,7 +65,7 @@ function ArchitetturaBase() {
         />
       </Paragraph>
 
-      <Buttons goBackButtonDisabled={true} nextPath="/blog/architettura-base/"/>
+      <Buttons goBackButtonDisabled={true} nextPath="/blog/componenti-computer/cpu/"/>
     </>
   );
 }

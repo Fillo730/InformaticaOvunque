@@ -51,7 +51,7 @@ function Cpu() {
   return (
     <>
         <div>
-            <h1 className="text-central primary-color">1: Come funziona il processore (CPU)</h1>
+            <h1 className="text-central primary-color">2: Come funziona il processore (CPU)</h1>
         </div>
 
         <Paragraph title="Cos'è?" 
@@ -80,7 +80,8 @@ function Cpu() {
             <List listElements={executionCycleSteps} />
         </Paragraph>
 
-        <Buttons goBackButtonDisabled={true} nextPath="/blog/componenti-computer/cpu-pipeline"/>
+        <Buttons goBackButtonDisabled={false} backPath="/blog/componenti-computer/architettura-base" 
+          nextPath="/blog/componenti-computer/cpu-pipeline"/>
     </>
   )
 }

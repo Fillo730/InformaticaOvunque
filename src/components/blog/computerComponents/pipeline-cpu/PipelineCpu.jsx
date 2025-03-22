@@ -16,7 +16,7 @@ function PipelineCpu() {
   return (
     <>
         <div>
-            <h1 className="text-central primary-color">2: La Pipeline della CPU</h1>
+            <h1 className="text-central primary-color">3: La Pipeline della CPU</h1>
         </div>
 
         <Paragraph title="Cos'è la Pipeline della CPU?" 

@@ -22,13 +22,13 @@ function Ram() {
   return (
     <>
         <div>
-            <h1 className="text-central primary-color">3: La Memoria RAM</h1>
+            <h1 className="text-central primary-color">4: La Memoria RAM</h1>
         </div>
 
         <Paragraph title="Cos'è la RAM?" 
           text="La RAM (Random Access Memory) è una memoria di lavoro utilizzata dai computer e da altri dispositivi elettronici per immagazzinare temporaneamente i dati e le istruzioni a cui il processore ha bisogno di accedere rapidamente. A differenza della memoria di archiviazione permanente (come hard disk o SSD), la RAM è volatile e perde i dati una volta che il dispositivo viene spento. La sua alta velocità è essenziale per il funzionamento efficiente dei sistemi informatici." />
 
-        <Picture path="https://upload.wikimedia.org/wikipedia/commons/e/e4/DDR_Memory.jpg"
+        <Picture path="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.625,f_auto,h_214,q_auto,w_380/c_pad,h_214,w_380/F1805901-01?pgw=1"
             altText="Immagine di una scheda di memoria RAM"/>
 
         <Paragraph title="Funzioni principali della RAM" text="La RAM svolge funzioni fondamentali per il funzionamento del sistema informatico. Di seguito sono riportate le sue principali caratteristiche:">
@@ -50,7 +50,7 @@ function Ram() {
         </Paragraph>
 
         <Buttons goBackButtonDisabled={false} backPath="/blog/componenti-computer/cpu-pipeline" 
-          nextPath="/blog/rom"/>
+          nextPath="/blog/componenti-computer/memoria-secondaria"/>
     </>
   )
 }

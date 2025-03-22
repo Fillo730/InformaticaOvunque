@@ -2,17 +2,21 @@
     color: #0011ff;
 }
 
-.primary-background-color {
-    background-color: #0011ff;
-}
-
 .secondary-color {
     color: #66aaff;
 }
 
+.third-color {
+    color: #00fffd;
+}
+
+.primary-background-color {
+    background-color: #0011ff;
+}
+
 .primary-gradient-right-left {
     background: rgb(255,255,255);
-background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,17,255,1) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,17,255,1) 100%);
 }
 
 .flex-central {

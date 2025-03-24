@@ -34,13 +34,7 @@ const componentArchitectureArticles = [
     title: "Bus di sistema",
     path: "/blog/componenti-computer/bus-di-sistema",
     text: "Come comunicano i componenti di un computer?"
-  },
-  {
-    id: "7",
-    title: "Dispositivi di I/O",
-    path: "/blog/componenti-computer/dispositivi-io",
-    text: "Scopri i dispositivi di input/output e la loro interazione con il computer."
-  }      
+  },    
 ];
   
 export default componentArchitectureArticles;

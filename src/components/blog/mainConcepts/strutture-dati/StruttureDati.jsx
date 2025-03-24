@@ -77,8 +77,8 @@ function StruttureDati() {
         text="Un grafo è una collezione di nodi (o vertici) e archi (o spigoli) che connettono i nodi. I grafi sono utilizzati per rappresentare situazioni in cui gli oggetti sono collegati tra loro, come le reti sociali, le mappe stradali e le reti di comunicazione. I grafi possono essere orientati o non orientati, a seconda che gli archi abbiano una direzione."
       />
 
-      <Buttons goBackButtonDisabled={false} goNextButtonDisabled={true} backPath="/blog/concetti-fondamentali/linguaggi-di-programmazione/" 
-        />
+      <Buttons goBackButtonDisabled={false} backPath="/blog/concetti-fondamentali/linguaggi-di-programmazione/" 
+        nextPath="/blog/concetti-fondamentali/database" />
     </>
   );
 }

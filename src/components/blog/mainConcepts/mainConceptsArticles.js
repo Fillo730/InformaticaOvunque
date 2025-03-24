@@ -40,6 +40,12 @@ const mainConceptsArticles = [
         title: "Strutture dati",
         path: "/blog/concetti-fondamentali/strutture-dati",
         text: "Come vengono memorizzati e gestiti i dati in memoria?"
+    },
+    {
+        id: "8",
+        title: "Database",
+        path: "/blog/concetti-fondamentali/database",
+        text: "Cos'è un database e qual'è la sua funzione?"
     }
 ];
   

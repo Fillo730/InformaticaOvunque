@@ -97,7 +97,7 @@ function Algoritmi() {
 
 
       <Buttons goBackButtonDisabled={false} backPath="/blog/concetti-fondamentali/il-sistema-binario/" 
-        nextPath="/blog/concetti-fondamentali/strutture-dati/"/>
+        nextPath="/blog/concetti-fondamentali/linguaggi-di-programmazione/"/>
     </>
   );
 }

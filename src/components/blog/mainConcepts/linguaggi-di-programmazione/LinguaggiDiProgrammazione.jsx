@@ -1,0 +1,75 @@
+import SwiperComponent from "../../componentsForPages/swiper/SwiperComponent";
+import List from "../../componentsForPages/list/List";
+import Paragraph from "../../componentsForPages/paragraph/Paragraph";
+import Buttons from "../../componentsForPages/buttons/Buttons";
+import programmingLanguages from "./programmingLanguages";
+
+function LinguaggiDiProgrammazione() {
+  return (
+    <>
+      <h1 className="text-central primary-color">6: Linguaggi di Programmazione</h1>
+
+      <Paragraph 
+        title="Introduzione"
+        text="Un linguaggio di programmazione è un insieme di regole sintattiche e semantiche che definiscono un modo formale 
+        per scrivere programmi. I linguaggi di programmazione permettono agli sviluppatori di comunicare con i computer 
+        per eseguire operazioni, risolvere problemi e creare software. Ogni linguaggio ha il proprio set di comandi, 
+        simboli e sintassi, che devono essere seguiti per scrivere codice che il computer possa interpretare ed eseguire."
+      />
+
+      <Paragraph 
+        title="Paradigmi di Programmazione"
+        text="I linguaggi di programmazione sono spesso classificati in base al paradigma che supportano, cioè il modello di programmazione che seguono. Alcuni dei paradigmi principali includono:"
+      >
+        <List 
+          listElements={[ 
+            { header: "Paradigma Imperativo", text: "Nel paradigma imperativo, come in C e Java, i programmi sono scritti come sequenze di istruzioni che mutano lo stato del programma." },
+            { header: "Paradigma Funzionale", text: "Nel paradigma funzionale, come in Haskell, si enfatizza l'uso delle funzioni pure e l'assenza di effetti collaterali." },
+            { header: "Paradigma Orientato agli Oggetti", text: "Nel paradigma orientato agli oggetti, come in Python e Java, i dati e le funzioni sono organizzati in oggetti che interagiscono tra loro." },
+            { header: "Paradigma Logico", text: "Nel paradigma logico, come in Prolog, la programmazione è basata sulla logica formale e sull'inferenza di fatti e regole." },
+          ]}
+        />
+      </Paragraph>
+
+      <Paragraph 
+        title="Tipi di Linguaggi di Programmazione"
+        text="Esistono diversi tipi di linguaggi di programmazione, ognuno con caratteristiche e scopi specifici. I principali 
+        tipi di linguaggi sono:"
+      >
+        <List 
+          listElements={[ 
+            { header: "Linguaggi di basso livello", text: "I linguaggi di basso livello, come l'Assembly, sono vicini all'architettura hardware del computer e offrono un controllo dettagliato delle risorse di sistema." },
+            { header: "Linguaggi di alto livello", text: "I linguaggi di alto livello, come Python e Java, sono più vicini al linguaggio umano e astraggono i dettagli hardware, rendendo il codice più facile da scrivere e leggere." },
+            { header: "Linguaggi di scripting", text: "I linguaggi di scripting, come JavaScript e PHP, sono utilizzati per scrivere script che automatizzano compiti specifici, come la gestione delle interazioni web." },
+            { header: "Linguaggi di programmazione funzionale", text: "I linguaggi funzionali, come Haskell, si concentrano sull'uso delle funzioni matematiche e immutabilità dei dati, differenziandosi dalla programmazione imperativa." },
+          ]}
+        />
+      </Paragraph>
+
+      <Paragraph 
+        title="Traduzione del Codice" 
+        text="Sebbene i linguaggi di programmazione siano il mezzo con cui gli sviluppatori comunicano con i computer, 
+        il codice scritto in un linguaggio di alto livello (come Python, Java o JavaScript) non è direttamente 
+        comprensibile dalla macchina. I computer, infatti, interpretano solo linguaggi di basso livello, come il codice
+        binario, costituito da sequenze di 0 e 1. Per fare in modo che un programma scritto in un linguaggio umano venga 
+        eseguito dal computer, è necessario tradurlo in codice macchina attraverso un processo chiamato compilazione o 
+        interpretazione. Un compilatore è uno strumento che traduce l'intero programma in codice macchina prima che 
+        venga eseguito, generando un file eseguibile. In questo caso, la traduzione avviene in un'unica fase, e 
+        l'esecuzione del programma avviene successivamente. Un interprete, invece, traduce ed esegue il codice riga 
+        per riga, durante l'esecuzione del programma stesso. A differenza del compilatore, l'interprete non crea un 
+        file eseguibile, ma esegue direttamente le istruzioni man mano che le traduce. Questi strumenti sono fondamentali 
+        per consentire al codice scritto dall'uomo di essere trasformato in un formato comprensibile e utilizzabile 
+        dalla macchina." />
+
+      <SwiperComponent slides={programmingLanguages} />
+
+      <Buttons 
+        goBackButtonDisabled={false} 
+        backPath="/blog/concetti-fondamentali/algoritmi/" 
+        nextPath="/blog/concetti-fondamentali/strutture-dati/" 
+      />
+    </>
+  );
+}
+
+export default LinguaggiDiProgrammazione;

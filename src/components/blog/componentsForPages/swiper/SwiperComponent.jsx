@@ -7,8 +7,9 @@ import './SwiperComponent.css'
 import '../../../../styles/global.css'
 import Paragraph from '../paragraph/Paragraph';
 import List from '../list/List';
+import Picture from '../image/Picture';
 
-function SwiperComponent({ slides }) {
+function SwiperComponent({ slides}) {
   return (
     <div className="container">
        <Swiper
@@ -25,6 +26,9 @@ function SwiperComponent({ slides }) {
             <Paragraph title={slide.title} text={slide.text}>
               {slide.list ? <List listElements={slide.list}/>: ""}
             </Paragraph>
+            {slide.image &&
+              <Picture path={slide.image} altText={slide.altText}/>
+            }
           </SwiperSlide>
         ))}
       </Swiper>

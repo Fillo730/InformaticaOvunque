@@ -4,7 +4,7 @@ function List({listElements}) {
   return (
     <ul className='content-list'>
         {listElements.map((element, index) => (
-            <li key={index}><strong>{element.header}</strong>:{element.text}</li>
+            <li key={index}><strong>{element.header}</strong>: {element.text}</li>
         ))}
     </ul>
   )

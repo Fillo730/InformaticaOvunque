@@ -1,4 +1,4 @@
-import FloatingCirclesWithChildren from '../../animations/FloatingCirclesWithChildren';
+import ScrollableLinesWithChildren from '../../animations/scroll-lines/ScrollableLinesWithChildren';
 import CollisionButton from '../generalComponents/button/CollisionButton';
 import CuriosityCard from './curiosityCard/CuriosityCard';
 import quotes from './objects/quotes';
@@ -10,11 +10,11 @@ import './Home.css';
 export default function Home() {
   return (
     <>
-      <div>
-        <h1 className="text-central primary-color">L'informatica come non l'hai mai vista</h1>
-      </div>
 
-      <FloatingCirclesWithChildren>
+      <ScrollableLinesWithChildren>
+        <div>
+          <h1 className="text-central primary-color">L'informatica come non l'hai mai vista</h1>
+        </div>
         <QuoteSwiper quotes={quotes} />
 
         <div className='greetings-container'>
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
         </div>
 
-      </FloatingCirclesWithChildren>
+      </ScrollableLinesWithChildren>
     </>
   );
 }

@@ -10,10 +10,10 @@ function Blog() {
   return (
     <>
       <div className='tabs-container text-central'>
-        <button onClick={() => setActiveTab('concettiFondamentali')}>Concetti Fondamentali</button>
-        <button onClick={() => setActiveTab('baseArchitecture')}>Componenti di un Computer</button>
-        <button onClick={() => setActiveTab('operativeSystems')}>Sistemi Operativi</button>
-        <button onClick={() => setActiveTab('Internet')}>Internet</button>
+        <button className='tabs-button' onClick={() => setActiveTab('concettiFondamentali')}>Concetti Fondamentali</button>
+        <button className='tabs-button' onClick={() => setActiveTab('baseArchitecture')}>Componenti di un Computer</button>
+        <button className='tabs-button' onClick={() => setActiveTab('operativeSystems')}>Sistemi Operativi</button>
+        <button className='tabs-button' onClick={() => setActiveTab('Internet')}>Internet</button>
       </div>
 
       {activeTab === "concettiFondamentali" && 

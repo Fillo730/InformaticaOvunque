@@ -1,3 +1,5 @@
+import { path, text } from "framer-motion/client";
+
 const mainConceptsArticles = [
     {
         id: "1",
@@ -9,25 +11,31 @@ const mainConceptsArticles = [
         id: "2",
         title: "Dati e informazione",
         path: "/blog/concetti-fondamentali/dati-informazione",
-        text: "Cos'è la differenza tra dati e informazione."
+        text: "Dati e informazione sono la stessa cosa? Scoprilo subito!."
     },
     {
         id: "3",
-        title: "Il sistema binario",
-        path: "/blog/concetti-fondamentali/il-sistema-binario",
-        text: "Come i computer usano il sistema binario."
+        title: "Codifica dei dati",
+        path: "/blog/concetti-fondamentali/codifica",
+        text: "Se il computer conosce solo 0 e 1, come fa a memorizzare caratteri/numeri?"
     },
     {
         id: "4",
-        title: "Algoritmi e programmazione",
-        path: "/blog/concetti-fondamentali/algoritmi",
-        text: "Introduzione agli algoritmi e alla programmazione."
+        title: "Il sistema binario",
+        path: "/blog/concetti-fondamentali/il-sistema-binario",
+        text: "Cos'è il sistema binario? Perchè viene utilizzato proprio questo?"
     },
     {
         id: "5",
-        title: "Sistema operativo",
-        path: "/blog/concetti-fondamentali/sistema-operativo",
-        text: "Il ruolo di un sistema operativo."
+        title: "Algoritmi",
+        path: "/blog/concetti-fondamentali/algoritmi",
+        text: "Cos'è un algoritmo? Come vengono studiati?"
+    },
+    {
+        id: "6",
+        title: "Linguaggi di programmazione",
+        path: "/blog/concetti-fondamentali/linguaggi-di-programmazione",
+        text: "Cos'è un linguaggio di programmazione? Come viene eseguito dal computer?"
     }
 ];
   

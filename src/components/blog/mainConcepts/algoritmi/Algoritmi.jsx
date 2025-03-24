@@ -7,7 +7,7 @@ import { text } from "framer-motion/client";
 function Algoritmi() {
   return (
     <>
-      <h1 className="text-central primary-color">4: Algoritmi</h1>
+      <h1 className="text-central primary-color">5: Algoritmi</h1>
 
       <Paragraph 
         title="Introduzione"

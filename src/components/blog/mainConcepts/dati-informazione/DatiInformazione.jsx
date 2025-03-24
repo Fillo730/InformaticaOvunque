@@ -48,7 +48,7 @@ function DatiInformazione() {
         altText="Dati e informazioni immagine"/>
 
       <Buttons goBackButtonDisabled={false} backPath="/blog/concetti-fondamentali/sistemi-informatici" 
-        nextPath="/blog/concetti-fondamentali/il-sistema-binario/"/>
+        nextPath="/blog/concetti-fondamentali/codifica/"/>
     </>
   );
 }

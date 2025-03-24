@@ -7,7 +7,7 @@ function SistemaBinario() {
 
   return (
     <>
-      <h1 className="text-central primary-color">3: Il Sistema Binario</h1>
+      <h1 className="text-central primary-color">4: Il Sistema Binario</h1>
 
       <Paragraph 
         title="Introduzione" 
@@ -16,6 +16,18 @@ function SistemaBinario() {
           A differenza del sistema decimale, che usa dieci simboli (0-9), il sistema binario si fonda su potenze di 
           due. Questo permette ai computer di operare con segnali elettrici, che possono essere facilmente 
           rappresentati come due stati: acceso (1) e spento (0)."
+      />
+
+      <Paragraph 
+        title="Perché il Sistema Binario è Utilizzato nei Computer"
+        text="Il sistema binario viene utilizzato nei computer perché si basa su due stati distinti, rappresentabili 
+        dai numeri 0 e 1, che si adattano perfettamente alla struttura fisica dei circuiti elettronici. I circuiti 
+        digitali sono in grado di distinguere facilmente tra due livelli di tensione, come un segnale alto (1) e un 
+        segnale basso (0). Questa semplicità rende il binario ideale per rappresentare le informazioni, poiché riduce 
+        la complessità rispetto a sistemi con più simboli che richiederebbero la gestione di stati intermedi, 
+        aumentando il rischio di errori. Inoltre, il sistema binario è facilmente implementabile e ottimizzabile 
+        in hardware, favorendo l'affidabilità, riducendo gli errori e migliorando l'efficienza energetica e la 
+        velocità complessiva del computer."
       />
 
       <Paragraph 
@@ -42,7 +54,7 @@ function SistemaBinario() {
           <BinaryDecimalConverter/>
       </Paragraph>
 
-      <Buttons goBackButtonDisabled={false} backPath="/blog/concetti-fondamentali/dati-informazione" 
+      <Buttons goBackButtonDisabled={false} backPath="/blog/concetti-fondamentali/codifica" 
         nextPath="/blog/concetti-fondamentali/algoritmi/" />
     </>
   );

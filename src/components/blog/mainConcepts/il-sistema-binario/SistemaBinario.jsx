@@ -43,7 +43,7 @@ function SistemaBinario() {
       </Paragraph>
 
       <Buttons goBackButtonDisabled={false} backPath="/blog/concetti-fondamentali/dati-informazione" 
-        nextPath="/blog/concetti-fondamentali/introduzione-agli-algoritmi/" />
+        nextPath="/blog/concetti-fondamentali/algoritmi/" />
     </>
   );
 }

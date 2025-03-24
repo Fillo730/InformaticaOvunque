@@ -20,7 +20,7 @@ const mainConceptsArticles = [
     {
         id: "4",
         title: "Algoritmi e programmazione",
-        path: "/blog/concetti-fondamentali/algoritmi-programmazione",
+        path: "/blog/concetti-fondamentali/algoritmi",
         text: "Introduzione agli algoritmi e alla programmazione."
     },
     {

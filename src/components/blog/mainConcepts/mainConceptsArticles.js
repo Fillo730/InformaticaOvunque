@@ -1,5 +1,3 @@
-import { path, text } from "framer-motion/client";
-
 const mainConceptsArticles = [
     {
         id: "1",
@@ -36,6 +34,12 @@ const mainConceptsArticles = [
         title: "Linguaggi di programmazione",
         path: "/blog/concetti-fondamentali/linguaggi-di-programmazione",
         text: "Cos'è un linguaggio di programmazione? Come viene eseguito dal computer?"
+    },
+    {
+        id: "7",
+        title: "Strutture dati",
+        path: "/blog/concetti-fondamentali/strutture-dati",
+        text: "Come vengono memorizzati e gestiti i dati in memoria?"
     }
 ];
   

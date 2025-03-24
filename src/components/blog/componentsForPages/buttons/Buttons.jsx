@@ -1,6 +1,6 @@
 import './Buttons.css';
 
-function Buttons({ goBackButtonDisabled, nextPath, backPath}) {
+function Buttons({ goBackButtonDisabled, goNextButtonDisabled=false, nextPath, backPath}) {
   return (
     <div className="container-link">
       <a href="/blog" className="link-button">Torna indietro</a>
@@ -11,7 +11,12 @@ function Buttons({ goBackButtonDisabled, nextPath, backPath}) {
           aria-disabled={goBackButtonDisabled} >
           Indietro
         </a>
-        <a href={nextPath} className="link-button">Avanti</a>
+        <a
+          href={nextPath}
+          className={`link-button ${goNextButtonDisabled ? 'disabled-link' : ''}`}
+          aria-disabled={goNextButtonDisabled} >
+          Avanti
+        </a>
       </div>
     </div>
   );

@@ -1,0 +1,86 @@
+import List from "../../componentsForPages/list/List";
+import Paragraph from "../../componentsForPages/paragraph/Paragraph";
+import Buttons from "../../componentsForPages/buttons/Buttons";
+import Picture from "../../componentsForPages/image/Picture";
+
+function StruttureDati() {
+  return (
+    <>
+      <h1 className="text-central primary-color">7: Strutture Dati</h1>
+
+      <Paragraph
+        title="Introduzione"
+        text="Le strutture dati sono metodi per organizzare e memorizzare i dati in modo che possano essere utilizzati 
+        in modo efficiente. La scelta di una struttura dati dipende dal tipo di operazioni che si devono eseguire sui dati e 
+        dalla complessità delle stesse. Alcuni tipi di strutture dati permettono di accedere rapidamente agli elementi, 
+        mentre altre sono più adatte per operazioni complesse come l'inserimento, l'eliminazione o la ricerca di dati."
+      />
+
+      <Paragraph
+        title="Tipi di Strutture Dati"
+        text="Successivamente sono elencate le principali strutture dati che vengono utilizzate:"
+      >
+        <List
+          listElements={[
+            { header: "Array", text: "Una struttura dati che memorizza una collezione di elementi, tutti dello stesso tipo, con un indice numerico." },
+            { header: "Liste", text: "Una collezione ordinata di elementi, che può essere modificata (inserimento, eliminazione) in modo dinamico." },
+            { header: "Pile (Stack)", text: "Una struttura dati che segue il principio LIFO (Last In, First Out), dove l'ultimo elemento inserito è il primo a essere rimosso." },
+            { header: "Code (Queue)", text: "Una struttura dati che segue il principio FIFO (First In, First Out), dove il primo elemento inserito è il primo a essere rimosso." },
+            { header: "Alberi", text: "Strutture dati gerarchiche, costituite da nodi, in cui ogni nodo può avere un numero qualsiasi di nodi figli." },
+            { header: "Grafi", text: "Una collezione di nodi e archi, dove i nodi rappresentano entità e gli archi rappresentano le connessioni tra di esse." }
+          ]}
+        />
+      </Paragraph>
+
+      <Paragraph
+        title="Array"
+        text="Un array è una struttura dati che memorizza una collezione di elementi dello stesso tipo, disposti 
+          in modo contiguo in memoria. Gli elementi sono accessibili tramite un indice numerico. Gli array sono utili 
+          per memorizzare sequenze di dati e sono molto efficienti quando si tratta di operazioni di accesso a 
+          singoli elementi."
+      />
+
+      <Picture path="https://lh3.googleusercontent.com/xqWisTnSm05gCYF24akBwy5hIjqxkDHZhmqdAqOy9N6b-HHxBmkhQgnVeGAk4zWbpa4XqY42LNWrSeQMqvu7SRypdvpBNRw_HfQLcLfWA5SC5LboIHg9D5mHNc--cNlPBYxnyt1C"
+        altText="Immagine di array"/>
+
+      <Paragraph
+        title="Liste"
+        text="Le liste sono strutture dati dinamiche che permettono di memorizzare una sequenza di elementi. A differenza degli array, le liste possono crescere o ridursi in modo dinamico. Esistono due tipi principali di liste: la lista collegata singola, in cui ogni elemento punta al successivo, e la lista doppiamente collegata, in cui ogni elemento punta sia al precedente che al successivo."
+      />
+
+      <Picture path="https://miro.medium.com/v2/resize:fit:615/1*iMYmkYDCSrXXdwpbqm-ekA.jpeg"
+        altText="Immagine lista"/>
+
+      <Paragraph
+        title="Pile (Stack)"
+        text="Le pile (stack) sono strutture dati che seguono il principio LIFO (Last In, First Out). 
+        L'elemento inserito per ultimo è il primo a essere rimosso. Le operazioni caratteristiche sono push per 
+        aggiungere un elemento e pop per rimuovere un elemento.Le pile sono utilizzate in molti algoritmi, come la 
+        gestione delle chiamate di funzione in un programma o la valutazione di espressioni aritmetiche."
+      />
+
+      <Picture path="https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1674805913851-Applications%20of%20Stack%20in%20Data%20Structure1.png"
+        altText="Immagine stack"/>
+
+      <Paragraph
+        title="Code (Queue)"
+        text="Le code (queue) sono strutture dati che seguono il principio FIFO (First In, First Out). L'elemento inserito per primo è il primo a essere rimosso. Le code vengono spesso utilizzate in scenari in cui l'elaborazione deve avvenire in ordine di arrivo, come la gestione delle risorse in un sistema operativo o nelle applicazioni di rete."
+      />
+
+      <Paragraph
+        title="Alberi"
+        text="Un albero è una struttura dati gerarchica costituita da nodi, in cui ogni nodo può avere uno o più nodi figli. Gli alberi sono utilizzati per rappresentare strutture gerarchiche come file system, espressioni matematiche o gerarchie organizzative. Gli alberi binari, in particolare, sono utilizzati in molti algoritmi di ricerca e ordinamento."
+      />
+
+      <Paragraph
+        title="Grafi"
+        text="Un grafo è una collezione di nodi (o vertici) e archi (o spigoli) che connettono i nodi. I grafi sono utilizzati per rappresentare situazioni in cui gli oggetti sono collegati tra loro, come le reti sociali, le mappe stradali e le reti di comunicazione. I grafi possono essere orientati o non orientati, a seconda che gli archi abbiano una direzione."
+      />
+
+      <Buttons goBackButtonDisabled={false} goNextButtonDisabled={true} backPath="/blog/concetti-fondamentali/linguaggi-di-programmazione/" 
+        />
+    </>
+  );
+}
+
+export default StruttureDati;

@@ -25,10 +25,7 @@ function Contact() {
         <h3 className='h3-title'>Chiedimi Qualcosa</h3>
         <p className='p-text'>
           In caso vuoi contattarmi per qualsiasi motivo, anche due chiacchiere, scrivimi pure alla seguente email:<br/>
-          <strong><Mail size={20} className="icon" /> Email:</strong> mondoinformatico@gmail.com
-        </p>
-        <p className='p-text'>
-          <strong><Phone size={20} className="icon" /> Telefono:</strong> +39 123 456 7890
+          <strong><Mail size={20} className="icon" /> Email:</strong> informaticaovunque@gmail.com
         </p>
       </div>
     </div>

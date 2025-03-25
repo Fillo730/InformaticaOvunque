@@ -10,9 +10,7 @@ import './Home.css';
 export default function Home() {
   return (
     <>
-
-      <ScrollableLinesWithChildren>
-        <div>
+      <div>
           <h1 className="text-central primary-color">L'informatica come non l'hai mai vista</h1>
         </div>
         <QuoteSwiper quotes={quotes} />
@@ -42,8 +40,6 @@ export default function Home() {
             ))}
           </div>
         </div>
-
-      </ScrollableLinesWithChildren>
     </>
   );
 }

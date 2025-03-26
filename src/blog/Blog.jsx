@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import componentArchitectureArticles from './computerComponents/componentArchitectureArticles';
-import mainConceptsArticles from './mainConcepts/mainConceptsArticles';
-import Article from './Article';
+import componentArchitectureArticles from './componentArchitectureArticles';
+import mainConceptsArticles from './mainConceptsArticles';
+import Article from './article/Article';
 import './Blog.css';
 
 function Blog() {

@@ -3,7 +3,7 @@ import List from "../../componentsForPages/list/List";
 import Paragraph from "../../componentsForPages/paragraph/Paragraph";
 import Buttons from "../../componentsForPages/buttons/Buttons";
 import SwiperComponent from "../../componentsForPages/swiper/SwiperComponent";
-import strati from "./strati";
+import strati from "../strati";
 
 function SistemiInformatici() {
 

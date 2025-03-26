@@ -1,6 +1,6 @@
 import './Buttons.css';
 
-function Buttons({ goBackButtonDisabled, goNextButtonDisabled=false, nextPath, backPath}) {
+function Buttons({ goBackButtonDisabled=false, goNextButtonDisabled=false, nextPath="", backPath=""}) {
   return (
     <div className="container-link">
       <a href="/blog" className="link-button">Torna indietro</a>

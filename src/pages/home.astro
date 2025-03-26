@@ -18,9 +18,11 @@ import '../home/Home.css'
 
 <HtmlLayout title="Home | Informatica Ovunque">
   <HomeLayout client:load>
-		<div>
+		
+    <div>
       <h1 class="text-central primary-color">L'informatica come non l'hai mai vista</h1>
     </div>
+
     <QuoteSwiper quotes={quotes} client:load/>
 
     <div class='greetings-container'>
@@ -47,5 +49,6 @@ import '../home/Home.css'
         ))}
       </div>
     </div>
+    
 	</HomeLayout>
 </HtmlLayout>

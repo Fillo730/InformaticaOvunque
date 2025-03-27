@@ -2,49 +2,49 @@ const mainConceptsArticles = [
     {
         id: "1",
         title: "Sistemi Informatici",
-        path: "/blog/concetti-fondamentali/sistemi-informatici",
+        path: "/blog/concetti-fondamentali/1-sistemi-informatici",
         text: "Cosa sono hardware e software e quali sono le differenze?"
     },
     {
         id: "2",
         title: "Dati e informazione",
-        path: "/blog/concetti-fondamentali/dati-informazione",
+        path: "/blog/concetti-fondamentali/2-dati-informazione",
         text: "Dati e informazione sono la stessa cosa? Scoprilo subito!."
     },
     {
         id: "3",
-        title: "Codifica dei dati",
-        path: "/blog/concetti-fondamentali/codifica",
-        text: "Se il computer conosce solo 0 e 1, come fa a memorizzare caratteri/numeri?"
+        title: "Il sistema binario",
+        path: "/blog/concetti-fondamentali/3-il-sistema-binario",
+        text: "Cos'è il sistema binario? Perchè viene utilizzato proprio questo?"
     },
     {
         id: "4",
-        title: "Il sistema binario",
-        path: "/blog/concetti-fondamentali/il-sistema-binario",
-        text: "Cos'è il sistema binario? Perchè viene utilizzato proprio questo?"
+        title: "Codifica dei dati",
+        path: "/blog/concetti-fondamentali/4-codifica-dei-dati",
+        text: "Se il computer conosce solo 0 e 1, come fa a memorizzare caratteri/numeri?"
     },
     {
         id: "5",
         title: "Algoritmi",
-        path: "/blog/concetti-fondamentali/algoritmi",
+        path: "/blog/concetti-fondamentali/5-algoritmi",
         text: "Cos'è un algoritmo? Come vengono studiati?"
     },
     {
         id: "6",
         title: "Linguaggi di programmazione",
-        path: "/blog/concetti-fondamentali/linguaggi-di-programmazione",
+        path: "/blog/concetti-fondamentali/6-linguaggi-di-programmazione",
         text: "Cos'è un linguaggio di programmazione? Come viene eseguito dal computer?"
     },
     {
         id: "7",
         title: "Strutture dati",
-        path: "/blog/concetti-fondamentali/strutture-dati",
+        path: "/blog/concetti-fondamentali/7-strutture-dati",
         text: "Come vengono memorizzati e gestiti i dati in memoria?"
     },
     {
         id: "8",
         title: "Database",
-        path: "/blog/concetti-fondamentali/database",
+        path: "/blog/concetti-fondamentali/8-database",
         text: "Cos'è un database e qual'è la sua funzione?"
     }
 ];

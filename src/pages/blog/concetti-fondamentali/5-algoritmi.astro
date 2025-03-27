@@ -1,0 +1,79 @@
+---
+//Layouts
+import HomeLayout from '../../../layouts/baseLayout/HomeLayout'
+import HtmlLayout from '../../../layouts/htmlLayout/HtmlLayout.astro'
+
+//Components
+import Paragraph from '../../../components/blog/componentsForPages/paragraph/Paragraph'
+import Buttons from '../../../components/blog/componentsForPages/buttons/Buttons'
+import List from '../../../components/blog/componentsForPages/list/List'
+
+---
+
+<HtmlLayout title={`5) Algoritmi | Informatica Ovunque`}>
+  <HomeLayout client:load>
+    <h1 class={`text-central primary-color`}>5: Algoritmi</h1>
+
+    <Paragraph
+      title={`Introduzione`}
+      text={`Un algoritmo è una sequenza finita di istruzioni, ben definite e ordinate, che permettono di risolvere 
+      un problema in un tempo limitato. Gli algoritmi sono alla base di tutte le operazioni che compiamo nel mondo 
+      digitale, dalle ricerche su Internet alla gestione dei dati. Ogni algoritmo deve essere: `}
+    >
+      <List
+        listElements={[
+          { header: `Finito`, text: `deve essere composto da un numero finito di passi e deve terminare` },
+          { header: `Deterministico`, text: `dati gli stessi dati in ingresso, si devono ottenere gli stessi risultati in uscita` },
+          { header: `Non ambiguo`, text: `le operazioni devono essere ben definite e non devono poter essere interpretate in maniera diversa` },
+          { header: `Generale`, text: `deve poter essere applicabile a tutta la classe di problemi a cui si riferisce` },
+        ]}
+      />
+    </Paragraph>
+
+    <Paragraph
+      title={`La Complessità degli Algoritmi`}
+      text={`La complessità degli algoritmi è una misura che esprime quanto un algoritmo sia efficiente in termini di 
+      risorse computazionali, come il tempo e la memoria, in funzione della dimensione dell'input. Due dei 
+      principali aspetti della complessità sono la complessità temporale e la complessità spaziale. 
+      La complessità temporale indica quanto tempo un algoritmo impiega per completare l'elaborazione in 
+      relazione alla dimensione dell'input, ed è spesso espressa tramite la notazione Big O 
+      (ad esempio, O(n), O(n^2), O(log n), ecc.). La complessità spaziale, invece, misura la quantità di memoria 
+      richiesta dall'algoritmo durante la sua esecuzione, anch'essa espressa tramite la notazione Big O.`}
+    />
+
+    <Paragraph
+      title={`Notazione e Studio della Complessità degli Algoritmi`}
+      text={`La notazione Big O è il sistema più comune utilizzato per esprimere la complessità di un algoritmo, 
+      descrivendo come il tempo di esecuzione o l'uso della memoria crescono al variare della dimensione 
+      dell'input. La notazione Big O fornisce una stima asintotica, cioè una previsione del comportamento 
+      dell'algoritmo quando l'input diventa molto grande. Questa notazione aiuta a confrontare algoritmi 
+      diversi in termini di efficienza, specialmente quando si tratta di grandi quantità di dati.`}
+    />
+
+    <Paragraph
+      title={`Algoritmi di Ordinamento`}
+      text={`Uno degli esempi più comuni di algoritmi sono quelli di ordinamento. Questi algoritmi hanno lo scopo di 
+      organizzare un insieme di dati in un ordine specifico, come crescente o decrescente. Ecco alcuni degli algoritmi 
+      di ordinamento più conosciuti:`}
+    >
+      <List
+        listElements={[
+          { header: `Bubble Sort`, text: `Un algoritmo semplice che ripete cicli sui dati confrontandoli a coppie adiacenti e scambiandoli se necessario.` },
+          { header: `Quick Sort`, text: `Un algoritmo più complesso ma veloce, che utilizza la tecnica del "divide et impera" per suddividere l'array in sottoinsiemi.` },
+          { header: `Merge Sort`, text: `Un altro algoritmo che utilizza la divisione dell'array e la fusione dei sottoinsiemi ordinati.` },
+          { header: `Insertion Sort`, text: `Un algoritmo semplice che inserisce ciascun elemento nella posizione corretta di un array già parzialmente ordinato.` },
+        ]}
+      />
+    </Paragraph>
+
+    <Paragraph
+      title={`Conclusione`}
+      text={`Gli algoritmi sono fondamentali nel mondo dell'informatica. Conoscere le loro caratteristiche, come la complessità 
+      e i vari tipi di algoritmi esistenti, è essenziale per capire come ottimizzare i processi computazionali e rendere i sistemi 
+      più efficienti. La scelta dell'algoritmo giusto può fare la differenza in termini di velocità e uso delle risorse.`}
+    />
+
+    <Buttons goBackButtonDisabled={false} backPath="/blog/concetti-fondamentali/4-codifica-dei-dati/" 
+      nextPath="/blog/concetti-fondamentali/6-linguaggi-di-programmazione/" />
+  </HomeLayout>
+</HtmlLayout>

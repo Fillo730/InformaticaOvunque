@@ -1,23 +1,28 @@
-import Paragraph from "../../componentsForPages/paragraph/Paragraph";
-import Buttons from "../../componentsForPages/buttons/Buttons";
+---
+//Layouts
+import HomeLayout from '../../../layouts/baseLayout/HomeLayout'
+import HtmlLayout from '../../../layouts/htmlLayout/HtmlLayout.astro'
 
-function CodificaDeiDati() {
+//Components
+import Paragraph from '../../../components/blog/componentsForPages/paragraph/Paragraph'
+import Buttons from '../../../components/blog/componentsForPages/buttons/Buttons'
+---
 
-  return (
-    <>
-      <h1 className="text-central primary-color">3: La Codifica dei Dati</h1>
+<HtmlLayout title=`4) Codifica | Informatica Ovunque`>
+  <HomeLayout client:load>
+    <h1 class=`text-central primary-color`>4: La Codifica dei Dati</h1>
 
       <Paragraph 
-        title="Introduzione" 
-        text="Come già accennato, i computer utilizzano il linguaggio binario per elaborare le informazioni. Ma sorge 
+        title=`Introduzione` 
+        text=`Come già accennato, i computer utilizzano il linguaggio binario per elaborare le informazioni. Ma sorge 
         spontanea una domanda: come è possibile rappresentare tutti i dati che vediamo su uno schermo se la macchina 
         può interpretare solo 0 e 1? Lo stesso vale per i numeri e i caratteri testuali. Ed è proprio qui che entra in 
-        gioco la codifica dei caratteri."
+        gioco la codifica dei caratteri.`
       />
 
       <Paragraph 
-        title="Come funziona la codifica?" 
-        text="La codifica delle informazioni in un computer avviene utilizzando sequenze di bit (0 e 1). Con l bit, è 
+        title=`Come funziona la codifica?` 
+        text=`La codifica delle informazioni in un computer avviene utilizzando sequenze di bit (0 e 1). Con l bit, è 
               possibile rappresentare 2<sup>l</sup> combinazioni diverse. Ad esempio, con 1 bit possiamo rappresentare 
               solo due stati (0 e 1), con 2 bit possiamo ottenere 4 combinazioni (00, 01, 10, 11) e così via. In generale, 
               se vogliamo codificare n elementi distinti, dobbiamo scegliere un numero di bit 
@@ -25,32 +30,29 @@ function CodificaDeiDati() {
               qualsiasi altro tipo di dato nei computer. Quindi, per fare un esempio, se vogliamo codificare tutti i
               caratteri dell'alfabeto italiano (26 lettere), abbiamo bisogno di almeno 2<sup>5</sup>=32 bit. In questo
               caso alcuni di essesi saranno non utilizzati, nel senso che associate ad alcune combinazioni di bit non
-              ci sarà nessuna lettera. Il codice in questo caso è detto rindondante."
+              ci sarà nessuna lettera. Il codice in questo caso è detto rindondante.`
       />
 
       <Paragraph 
-        title="Esempio di Codifica di caratteri: Codifica ASCII" 
-        text="Un esempio comune di codifica di caratteri è la codifica **ASCII** (American Standard Code for 
+        title=`Esempio di Codifica di caratteri: Codifica ASCII` 
+        text=`Un esempio comune di codifica di caratteri è la codifica **ASCII** (American Standard Code for 
         Information Interchange), che rappresenta ogni carattere alfanumerico con un valore numerico di 7 bit.
         Ad esempio, il carattere 'A' è rappresentato dal numero 65 in ASCII, mentre 'a' corrisponde a 97. 
         Questa codifica è ampiamente utilizzata nei sistemi informatici per rappresentare testi in modo che possano 
-        essere interpretati e visualizzati dai computer."
+        essere interpretati e visualizzati dai computer.`
       />
 
       <Paragraph 
-        title="Successore di ASCHII: Unicode"
-        text="ASCII ha un grosso limite: supporta solo 128 caratteri, il che lo rende inadatto per lingue con alfabetipiù 
+        title=`Successore di ASCHII: Unicode`
+        text=`ASCII ha un grosso limite: supporta solo 128 caratteri, il che lo rende inadatto per lingue con alfabetipiù 
         ampi o caratteri speciali. Per superare questo problema, è stato sviluppato Unicode, uno standard più avanzato 
         che può rappresentare migliaia di caratteri appartenenti a diverse lingue, simboli matematici, emoji e altro ancora.  
         Unicode utilizza diverse codifiche, tra cui **UTF-8**, **UTF-16** e **UTF-32**, con UTF-8 che è oggi la codifica più 
         diffusa grazie alla sua efficienza e compatibilità con ASCII. Oggi Unicode è lo standard globale per la 
-        rappresentazione dei caratteri nei computer, nei dispositivi mobili e sul web."
+        rappresentazione dei caratteri nei computer, nei dispositivi mobili e sul web.`
       />
 
-      <Buttons goBackButtonDisabled={false} backPath="/blog/concetti-fondamentali/dati-informazione" 
-        nextPath="/blog/concetti-fondamentali/il-sistema-binario/" />
-    </>
-  );
-}
-
-export default CodificaDeiDati;
+      <Buttons goBackButtonDisabled={false} backPath=`/blog/concetti-fondamentali/3-il-sistema-binario` 
+        nextPath=`/blog/concetti-fondamentali/5-algoritmi` />
+  </HomeLayout>
+</HtmlLayout>

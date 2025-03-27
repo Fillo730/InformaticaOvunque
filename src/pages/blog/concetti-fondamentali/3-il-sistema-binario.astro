@@ -1,0 +1,64 @@
+---
+//Layouts
+import HomeLayout from '../../../layouts/baseLayout/HomeLayout'
+import HtmlLayout from '../../../layouts/htmlLayout/HtmlLayout.astro'
+
+//Components
+import Paragraph from '../../../components/blog/componentsForPages/paragraph/Paragraph'
+import Buttons from '../../../components/blog/componentsForPages/buttons/Buttons'
+import BinaryDecimalConverter from '../../../components/blog/mainConcepts/binaryDecimalConverter/BinaryDecimalConverter'
+---
+
+<HtmlLayout title='3) Il sistema binario | Informatica Ovunque'>
+  <HomeLayout client:load>
+    <h1 class='text-central primary-color'>3: Il Sistema Binario</h1>
+
+      <Paragraph 
+        title=`Introduzione` 
+        text=`Il sistema binario è alla base della rappresentazione dei dati nei computer e nei dispositivi digitali. 
+          È un sistema numerico posizionale che utilizza solo due simboli: 0 e 1, noti anche come bit (binary digits). 
+          A differenza del sistema decimale, che usa dieci simboli (0-9), il sistema binario si fonda su potenze di 
+          due. Questo permette ai computer di operare con segnali elettrici, che possono essere facilmente 
+          rappresentati come due stati: acceso (1) e spento (0).`
+      />
+
+      <Paragraph 
+        title=`Perché il Sistema Binario è Utilizzato nei Computer`
+        text=`Il sistema binario viene utilizzato nei computer perché si basa su due stati distinti, rappresentabili 
+        dai numeri 0 e 1, che si adattano perfettamente alla struttura fisica dei circuiti elettronici. I circuiti 
+        digitali sono in grado di distinguere facilmente tra due livelli di tensione, come un segnale alto (1) e un 
+        segnale basso (0). Questa semplicità rende il binario ideale per rappresentare le informazioni, poiché riduce 
+        la complessità rispetto a sistemi con più simboli che richiederebbero la gestione di stati intermedi, 
+        aumentando il rischio di errori. Inoltre, il sistema binario è facilmente implementabile e ottimizzabile 
+        in hardware, favorendo l'affidabilità, riducendo gli errori e migliorando l'efficienza energetica e la 
+        velocità complessiva del computer.`
+      />
+
+      <Paragraph 
+        title=`Come Funziona il Sistema Binario?` 
+        text=`Nel sistema binario, ogni cifra (bit) ha un valore che è una potenza di 2. La cifra più a destra ha un valore di 2^0, la successiva a sinistra ha un valore di 2^1, poi 2^2, e così via. 
+              Ad esempio, consideriamo il numero binario 1011. Per capire a cosa corrisponde in decimale, dobbiamo moltiplicare ogni bit per la potenza di 2 corrispondente alla sua posizione, e poi sommare i risultati.`
+      />
+
+      <Paragraph 
+        title=`Esempio di Conversione da Binario a Decimale` 
+        text=`Consideriamo il numero binario 1011:
+              - La cifra più a destra (1) è posizionata in 2^0, quindi 1 * 2^0 = 1
+              - La seconda cifra da destra (1) è posizionata in 2^1, quindi 1 * 2^1 = 2
+              - La terza cifra da destra (0) è posizionata in 2^2, quindi 0 * 2^2 = 0
+              - La quarta cifra da destra (1) è posizionata in 2^3, quindi 1 * 2^3 = 8
+
+              Sommiamo i risultati: 8 + 0 + 2 + 1 = 11. Quindi, il numero binario 1011 corrisponde al numero decimale 11.`
+      />
+
+      <Paragraph 
+        title=`Metti alla prova le tue conoscenze` 
+        text=`Usa il convertitore binario-decimale qui sotto per esercitarti e verificare le tue conversioni in 
+          tempo reale.`>
+          <BinaryDecimalConverter/>
+      </Paragraph>
+
+      <Buttons goBackButtonDisabled={false} backPath='/blog/concetti-fondamentali/2-dati-informazione' 
+        nextPath='/blog/concetti-fondamentali/4-codifica-dei-dati/' />
+  </HomeLayout>
+</HtmlLayout>

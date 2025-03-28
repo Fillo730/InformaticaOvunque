@@ -1,16 +1,12 @@
 ---
 //Layouts
-import HomeLayout from '../../../layouts/baseLayout/HomeLayout'
-import HtmlLayout from '../../../layouts/htmlLayout/HtmlLayout.astro'
+import {HtmlLayout, HomeLayout} from '../../../layouts/layoutsDependencies'
 
 //Components
-import Paragraph from '../../../components/blog/componentsForPages/paragraph/Paragraph'
-import Buttons from '../../../components/blog/componentsForPages/buttons/Buttons'
-import List from '../../../components/blog/componentsForPages/list/List'
-import SwiperComponent from '../../../components/blog/componentsForPages/swiper/SwiperComponent'
+import {Paragraph, List, Buttons, SwiperWithParagraphs} from '../../../components/componentsDependencies.js'
 
 //Objects
-import programmingLanguages from '../../../components/blog/mainConcepts/programmingLanguages'
+import programmingLanguages from '../../../blogPages/mainConcepts/programmingLanguages'
 
 ---
 
@@ -71,7 +67,7 @@ import programmingLanguages from '../../../components/blog/mainConcepts/programm
       dalla macchina.`} 
     />
 
-    <SwiperComponent slides={programmingLanguages} />
+    <SwiperWithParagraphs slides={programmingLanguages} />
 
     <Buttons 
       goBackButtonDisabled={false} 

@@ -1,17 +1,12 @@
 ---
 //Layouts
-import HomeLayout from '../../../layouts/baseLayout/HomeLayout'
-import HtmlLayout from '../../../layouts/htmlLayout/HtmlLayout.astro'
+import {HtmlLayout, HomeLayout} from '../../../layouts/layoutsDependencies'
 
 //Components
-import Paragraph from '../../../components/blog/componentsForPages/paragraph/Paragraph'
-import Picture from '../../../components/blog/componentsForPages/image/Picture'
-import Buttons from '../../../components/blog/componentsForPages/buttons/Buttons'
-import List from '../../../components/blog/componentsForPages/list/List'
-import SwiperComponent from '../../../components/blog/componentsForPages/swiper/SwiperComponent'
+import {Paragraph, Picture, List, Buttons, SwiperWithParagraphs} from '../../../components/componentsDependencies.js'
 
 //Objects
-import slidesData from '../../../components/blog/computerComponents/cpu/slidesData'
+import slidesData from '../../../blogPages/computerComponents/cpu/slidesData'
 ---
 
 <HtmlLayout title=`2)Processore (CPU) | Informatica Ovunque`>
@@ -40,7 +35,7 @@ import slidesData from '../../../components/blog/computerComponents/cpu/slidesDa
   ]}/>
   </Paragraph>
 
-  <SwiperComponent slides={slidesData}/>
+  <SwiperWithParagraphs slides={slidesData}/>
 
   <Paragraph title=`Ciclo di esecuzione` text=`Il ciclo di esecuzione della CPU descrive le fasi attraverso le quali la CPU elabora le istruzioni. Un ciclo completo comprende:`>
       <List listElements={[

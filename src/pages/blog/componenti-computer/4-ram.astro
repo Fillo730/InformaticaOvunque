@@ -1,16 +1,12 @@
 ---
 //Layouts
-import HomeLayout from '../../../layouts/baseLayout/HomeLayout'
-import HtmlLayout from '../../../layouts/htmlLayout/HtmlLayout.astro'
+import {HtmlLayout, HomeLayout} from '../../../layouts/layoutsDependencies'
 
 //Components
-import Paragraph from '../../../components/blog/componentsForPages/paragraph/Paragraph'
-import Picture from '../../../components/blog/componentsForPages/image/Picture'
-import Buttons from '../../../components/blog/componentsForPages/buttons/Buttons'
-import List from '../../../components/blog/componentsForPages/list/List'
+import {Paragraph, Picture, List, Buttons} from '../../../components/componentsDependencies.js'
 ---
 
-<HtmlLayout title=`4)Memoria Principale (RAM) | Informatica Ovunque`}>
+<HtmlLayout title=`4)Memoria Principale (RAM) | Informatica Ovunque`>
   <HomeLayout client:load>
     <div>
       <h1 class=`text-central primary-color`>4: La Memoria RAM</h1>

@@ -9,7 +9,7 @@ import Paragraph from '../paragraph/Paragraph';
 import List from '../list/List';
 import Picture from '../image/Picture';
 
-function SwiperComponent({ slides}) {
+function SwiperWithParagraphs({ slides}) {
   return (
     <div className="container">
        <Swiper
@@ -36,4 +36,4 @@ function SwiperComponent({ slides}) {
   );
 }
 
-export default SwiperComponent;
+export default SwiperWithParagraphs;

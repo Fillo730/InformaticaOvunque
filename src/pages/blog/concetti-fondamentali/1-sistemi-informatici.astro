@@ -1,17 +1,12 @@
 ---
 //Layouts
-import HomeLayout from '../../../layouts/baseLayout/HomeLayout'
-import HtmlLayout from '../../../layouts/htmlLayout/HtmlLayout.astro'
+import {HtmlLayout, HomeLayout} from '../../../layouts/layoutsDependencies'
 
 //Components
-import Paragraph from '../../../components/blog/componentsForPages/paragraph/Paragraph'
-import Picture from '../../../components/blog/componentsForPages/image/Picture'
-import Buttons from '../../../components/blog/componentsForPages/buttons/Buttons'
-import List from '../../../components/blog/componentsForPages/list/List'
-import SwiperComponent from '../../../components/blog/componentsForPages/swiper/SwiperComponent'
+import {Paragraph, Picture, List, Buttons, SwiperWithParagraphs} from '../../../components/componentsDependencies.js'
 
 //Objects
-import strati from '../../../components/blog/mainConcepts/strati'
+import strati from '../../../blogPages/mainConcepts/strati'
 ---
 
 <HtmlLayout title=`1) Sistemi Informatici | Informatica Ovunque`>
@@ -65,7 +60,7 @@ import strati from '../../../components/blog/mainConcepts/strati'
         Questa tipologia di approccio garantisce che ogni componente sia indipendente rispetto agli altri. Questo vuol
         dire per esempio che, se ho un computer, posso cambiare arbitrariamente processore senza preoccuparmi del
         sistema operativo, essendo che non comunicano direttamente. I principali strati sono i seguenti:`>
-        <SwiperComponent slides={strati} client:load/>
+        <SwiperWithParagraphs slides={strati} client:load/>
       </Paragraph>
 
       <Buttons goBackButtonDisabled={true} goNextButtonDisabled={false} 

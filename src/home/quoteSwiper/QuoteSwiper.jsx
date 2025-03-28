@@ -21,13 +21,13 @@ export default function QuoteSwiper({ quotes }) {
       }}
       pagination={true}
       modules={[EffectCoverflow, Pagination]}
-      className="mySwiper"
+      className="quoteSwiper"
     >
       {quotes.map((quote, index) => (
         <SwiperSlide key={index}>
-          <div className='container-slide' style={{ backgroundImage: `url(${quote.image})` }}>
-            <h2 className='slide-quote'>"{quote.quote}"</h2>
-            <p className='slide-author'>– {quote.author}</p>
+          <div className='quoteSwiper-container-slide' style={{ backgroundImage: `url(${quote.image})` }}>
+            <h2 className='quoteSwiper-slide-quote'>"{quote.quote}"</h2>
+            <p className='quoteSwiper-slide-author'>– {quote.author}</p>
           </div>
         </SwiperSlide>
       ))}

@@ -1,8 +1,8 @@
 import CollisionButton from './collisionButton/CollisionButton'
-import Paragraph from './componentsForPages/paragraph/Paragraph.astro'
-import Picture from './componentsForPages/picture/Picture.astro'
-import List from './componentsForPages/list/List.astro'
-import Buttons from './componentsForPages/buttons/Buttons.astro'
+import Paragraph from './componentsForPages/paragraph/Paragraph'
+import Picture from './componentsForPages/picture/Picture'
+import List from './componentsForPages/list/List'
+import Buttons from './componentsForPages/buttons/Buttons'
 import SwiperWithParagraphs from './componentsForPages/swiperWithParagraphs/SwiperWithParagraphs'
 
 export {CollisionButton, Paragraph, Picture, List, Buttons, SwiperWithParagraphs};

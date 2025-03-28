@@ -1,18 +1,18 @@
+//Components
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import {Paragraph, List, Picture} from '../../componentsDependencies'
+
+//CSSFiles
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import './SwiperComponent.css'
-import '../../../../styles/global.css'
-import Paragraph from '../paragraph/Paragraph';
-import List from '../list/List';
-import Picture from '../image/Picture';
+import './SwiperWithParagraphs.css';
+import 'swiper/css';
 
-function SwiperWithParagraphs({ slides}) {
+function SwiperWithParagraphs({ slides }) {
   return (
     <div className="container">
-       <Swiper
+      <Swiper
         cssMode={true}
         navigation={true}
         pagination={true}

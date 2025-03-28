@@ -5,7 +5,7 @@ import { HomeLayout, HtmlLayout } from '../layouts/layoutsDependencies';
 //ReactComponents
 import QuoteSwiper from "../home/quoteSwiper/QuoteSwiper"
 import CuriosityCard from "../home/curiosityCard/CuriosityCard.astro"
-import CollisionButton from '../generalComponents/collisionButton/CollisionButton';
+import {CollisionButton} from '../components/componentsDependencies';
 
 //Objects
 import curiosities from "../home/objects/curiosities"
@@ -19,7 +19,7 @@ import '../home/Home.css'
   <HomeLayout client:load>
 		
     <div>
-      <h1 class="text-central primary-color">L'informatica come non l'hai mai vista</h1>
+      <h1 class="width-custom text-central primary-color">L'informatica come non l'hai mai vista</h1>
     </div>
 
     <QuoteSwiper quotes={quotes} client:load/>

@@ -1,6 +1,5 @@
+import { CollisionButton } from '../../components/componentsDependencies';
 import './Article.css';
-import '../../styles/global.css'
-import CollisionButton from '../../components/generalComponents/button/CollisionButton';
 
 function Article({ id, title, path, text}) {
   return (

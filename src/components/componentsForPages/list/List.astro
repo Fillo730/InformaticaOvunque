@@ -1,9 +1,0 @@
----
-const { listElements } = Astro.props;
----
-
-<ul class="content-list">
-  {listElements.map((listElement: { header: string; text: string; }) => (
-    <li><strong>{listElement.header}</strong>: {listElement.text}</li>
-  ))}
-</ul>

@@ -1,10 +1,9 @@
-.mySwiper {
-    width: 70%;
-    height: 400px;
-    margin: auto;
+.quoteSwiper {
+    height: 60vh;
+    width: 70% !important;
   }
   
-  .container-slide {
+  .quoteSwiper-container-slide {
     position: relative;
     width: 100%;
     height: 100%;
@@ -21,7 +20,7 @@
     background-position: center;
   }
   
-  .container-slide::before {
+  .quoteSwiper-container-slide::before {
     content: "";
     position: absolute;
     top: 0;
@@ -32,7 +31,7 @@
     border-radius: 20px;
   }
   
-.slide-quote {
+.quoteSwiper-slide-quote {
     font-size: 1.5rem;
     font-weight: bold;
     position: relative;
@@ -40,7 +39,7 @@
     z-index: 2;
 }
   
-.slide-author {
+.quoteSwiper-slide-author {
     font-size: 1.2rem;
     font-style: italic;
     position: relative;

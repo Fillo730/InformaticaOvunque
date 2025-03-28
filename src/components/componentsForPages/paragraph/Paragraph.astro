@@ -1,0 +1,10 @@
+---
+import './Paragraph.css'
+const { title, text } = Astro.props;
+---
+
+<div class="container">
+  <h2 class="section-title primary-color text-central">{title}</h2>
+    <p class="content-paragraph" set:html={text}/>
+  <slot />
+</div>

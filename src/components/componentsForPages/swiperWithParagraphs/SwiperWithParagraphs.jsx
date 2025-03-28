@@ -36,8 +36,4 @@ function SwiperWithParagraphs({ slides }) {
   );
 }
 
-<<<<<<< HEAD
 export default SwiperWithParagraphs;
-=======
-export default SwiperWithParagraphs;
->>>>>>> 8d94c25877d8488f81d941d117087a7f645b012e

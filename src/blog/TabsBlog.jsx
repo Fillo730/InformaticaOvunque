@@ -2,9 +2,9 @@ import { useState } from 'react';
 import componentArchitectureArticles from './componentArchitectureArticles';
 import mainConceptsArticles from './mainConceptsArticles';
 import Article from './article/Article';
-import './Blog.css';
+import './TabsBlog.css';
 
-function Blog() {
+function TabsBlog() {
   const [activeTab, setActiveTab] = useState('concettiFondamentali');
 
   return (
@@ -33,4 +33,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default TabsBlog;

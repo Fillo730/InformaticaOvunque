@@ -1,0 +1,24 @@
+---
+import './Buttons.css'
+const { goBackButtonDisabled = false, goNextButtonDisabled = false, nextPath = "", backPath = "" } = Astro.props;
+---
+
+<div class="container-link">
+  <a href="/blog" class="link-button">Torna indietro</a>
+  <div class="gap">
+    <a
+      href={backPath}
+      class={`link-button ${goBackButtonDisabled ? 'disabled-link' : ''}`}
+      aria-disabled={goBackButtonDisabled}
+    >
+      Indietro
+    </a>
+    <a
+      href={nextPath}
+      class={`link-button ${goNextButtonDisabled ? 'disabled-link' : ''}`}
+      aria-disabled={goNextButtonDisabled}
+    >
+      Avanti
+    </a>
+  </div>
+</div>

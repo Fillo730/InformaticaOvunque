@@ -1,0 +1,52 @@
+---
+//Layouts
+import {HtmlLayout, HomeLayout} from '../../../layouts/layoutsDependencies'
+
+//Components
+import {Paragraph, Picture, List, Buttons, SwiperWithParagraphs} from '../../../components/componentsDependencies.js'
+
+//Objects
+import slidesData from '../../../blogPages/computerComponents/cpu/slidesData'
+---
+
+<HtmlLayout title=`2)Processore (CPU) | Informatica Ovunque`>
+  <HomeLayout client:load>
+    <div>
+      <h1 class=`text-central primary-color`>2: Come funziona il processore (CPU)</h1>
+  </div>
+
+  <Paragraph title=`Cos'è?` 
+    text=`La CPU (Central Processing Unit) è il cuore del sistema informatico, spesso paragonata al cervello di un organismo vivente. 
+    Essa si occupa di eseguire i programmi e gestire l'elaborazione dei dati. La CPU carica le informazioni dalla memoria secondaria (come il disco rigido o SSD) alla memoria principale (RAM), 
+    legge ed esegue le istruzioni, e salva i risultati di nuovo nella memoria. Oltre a gestire l'esecuzione dei programmi, coordina le operazioni tra i vari componenti del computer, 
+    come la memoria, la scheda grafica e le periferiche di input/output.`/>
+
+    <Picture path=`https://image-v2.cdn.app.senecalearning.com/2019-11/b9ea0541-4878-4213-928a-0ee3659ff4cb/CPU-min,h_400,q_80,w_640.png`
+      altText=`Immagine CPU`/>
+
+  <Paragraph title=`Struttura` text=`La CPU è composta da alcuni componenti fondamentali, tra cui:`>
+  <List listElements={[
+      {header: `L'Unità di Controllo (CU)`, text: `Gestisce il flusso delle istruzioni e coordina le operazioni tra le altre unità.`},
+      {header: `L'Unità Logico-Aritmetica (ALU)`, text: `Esegue le operazioni aritmetiche e logiche, come somme, sottrazioni e confronti.`},
+      {header: `I Registri`, text: `Piccole aree di memoria all'interno della CPU utilizzate per immagazzinare temporaneamente i dati e le istruzioni durante l'elaborazione.`},
+      {header: `La Cache`, text: `Una memoria ad alta velocità che conserva i dati e le istruzioni più frequentemente utilizzati, per velocizzare l'accesso e migliorare le performance.`},
+      {header: `Il Bus di Dati`, text: `Consente il trasferimento delle informazioni tra i vari componenti della CPU e gli altri dispositivi del computer.`},
+      {header: `Il Clock`, text: `È il componente che sincronizza tutte le operazioni della CPU, fornendo un segnale temporale regolare per coordinare l'esecuzione delle istruzioni.`}
+  ]}/>
+  </Paragraph>
+
+  <SwiperWithParagraphs slides={slidesData} client:load/>
+
+  <Paragraph title=`Ciclo di esecuzione` text=`Il ciclo di esecuzione della CPU descrive le fasi attraverso le quali la CPU elabora le istruzioni. Un ciclo completo comprende:`>
+      <List listElements={[
+        { header: `Fase di Fetch`, text: `La CPU recupera l'istruzione dalla memoria, utilizzando l'indirizzo fornito dal Program Counter (PC). Questo passaggio implica l'accesso alla memoria e il trasferimento dell'istruzione al registro delle istruzioni.` },
+    { header: `Fase di Decode`, text: `L'istruzione recuperata viene decodificata dall'Unità di Controllo (CU), che determina l'operazione da eseguire e identifica gli operandi necessari.` },
+    { header: `Fase di Execute`, text: `L'ALU esegue l'operazione specificata dall'istruzione, utilizzando gli operandi individuati. I risultati possono essere scritti nei registri o nella memoria.` },
+    { header: `Fase di Write-back`, text: `I risultati dell'operazione vengono scritti nel registro di destinazione o nella memoria, completando il ciclo.` }
+      ]} />
+  </Paragraph>
+
+  <Buttons goBackButtonDisabled={false} goNextButtonDisabled={false} backPath=`/blog/componenti-computer/1-architettura-base` 
+    nextPath=`/blog/componenti-computer/3-cpu-pipeline`/>
+</HomeLayout>
+</HtmlLayout>

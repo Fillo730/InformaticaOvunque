@@ -1,0 +1,12 @@
+---
+import './Picture.css'
+
+
+interface Picture {
+    path: string;
+    altText: string;
+}
+const {path, altText} = Astro.props;
+---
+
+<img src={path} alt={altText} class="responsive-image"/>

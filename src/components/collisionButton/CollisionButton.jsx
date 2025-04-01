@@ -1,11 +1,14 @@
 import './CollisionButton.css';
 
 function CollisionButton({ path, text }) {
+  function handleClick() {
+    window.location.href = path;
+  }
+  
   return (
-    <button className="cssbuttons-io-button">
+    <button className="cssbuttons-io-button" onClick={handleClick}>
       {text}
       <div className="icon">
-        <a href={path}>
         <svg
           height="24"
           width="24"
@@ -18,7 +21,6 @@ function CollisionButton({ path, text }) {
             fill="currentColor"
           ></path>
         </svg>
-        </a>
       </div>
   </button>
   

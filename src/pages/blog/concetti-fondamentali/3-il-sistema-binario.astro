@@ -14,24 +14,23 @@ import BinaryDecimalConverter from '../../../blogPages/mainConcepts/binaryDecima
     <h1 class='text-central primary-color'>3: Il Sistema Binario</h1>
 
       <Paragraph 
-        title=`Introduzione` 
+        title=`Cos'è il sistema binario?` 
         text=`Il sistema binario è alla base della rappresentazione dei dati nei computer e nei dispositivi digitali. 
-          È un sistema numerico posizionale che utilizza solo due simboli: 0 e 1, noti anche come bit (binary digits). 
-          A differenza del sistema decimale, che usa dieci simboli (0-9), il sistema binario si fonda su potenze di 
-          due. Questo permette ai computer di operare con segnali elettrici, che possono essere facilmente 
-          rappresentati come due stati: acceso (1) e spento (0).`
+          È un <strong>sistema numerico posizionale</strong> che utilizza solo due simboli: 0 e 1, noti anche come bit (binary digits). 
+          a differenza del sistema decimale, che utilizza i noti simboli da 0 a 9. Per posizionale intendiamo un sistema 
+          in cui a seconda della posizione della cifra all'interno del numero, essa assume un valore diverso.`
       />
 
       <Paragraph 
-        title=`Perché il Sistema Binario è Utilizzato nei Computer`
+        title=`Perché il Sistema Binario è Utilizzato nei Computer?`
         text=`Il sistema binario viene utilizzato nei computer perché si basa su due stati distinti, rappresentabili 
         dai numeri 0 e 1, che si adattano perfettamente alla struttura fisica dei circuiti elettronici. I circuiti 
         digitali sono in grado di distinguere facilmente tra due livelli di tensione, come un segnale alto (1) e un 
         segnale basso (0). Questa semplicità rende il binario ideale per rappresentare le informazioni, poiché riduce 
-        la complessità rispetto a sistemi con più simboli che richiederebbero la gestione di stati intermedi, 
-        aumentando il rischio di errori. Inoltre, il sistema binario è facilmente implementabile e ottimizzabile 
-        in hardware, favorendo l'affidabilità, riducendo gli errori e migliorando l'efficienza energetica e la 
-        velocità complessiva del computer.`
+        la complessità aumentando l'affidabilità rispetto a sistemi con più simboli che richiederebbero la gestione di 
+        stati intermedi, aumentando il rischio di errori. Più sono i livelli tra cui devo distinguire (pensate a un livello
+        di tensione), minore sarò lo scarto tra essi, quindi semplici disturbi e rumori possono portare ad errori di
+        interpretazione, e quindi c'è bisogno di strumenti e circuiti più precisi, aumentando la complessità.`
       />
 
       <Paragraph 
@@ -55,7 +54,7 @@ import BinaryDecimalConverter from '../../../blogPages/mainConcepts/binaryDecima
         title=`Metti alla prova le tue conoscenze` 
         text=`Usa il convertitore binario-decimale qui sotto per esercitarti e verificare le tue conversioni in 
           tempo reale.`>
-          <BinaryDecimalConverter/>
+          <BinaryDecimalConverter client:load/>
       </Paragraph>
 
       <Buttons goBackButtonDisabled={false} backPath='/blog/concetti-fondamentali/2-dati-informazione' 

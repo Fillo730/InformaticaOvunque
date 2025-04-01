@@ -14,52 +14,60 @@ import strati from '../../../blogPages/mainConcepts/strati'
     <h1 class=`text-central primary-color`>1: Sistemi Informatici: Hardware e Software</h1>
 
       <Paragraph 
-        title=`Introduzione` 
-        text=`Un sistema informatico è un insieme di componenti hardware e software che collaborano per eseguire operazioni e risolvere problemi. 
-              L'hardware rappresenta la parte fisica del computer, mentre il software è costituito dai programmi che ne gestiscono il funzionamento. 
-              Insieme, questi due elementi formano il nucleo di ogni dispositivo informatico. Ogni sistema informatico è progettato per garantire efficienza, affidabilità e interazione ottimale tra le varie componenti.`
+        title=`Cos'è un sistema informatico?` 
+        text=`Un sistema informatico è un insieme di componenti <strong>hardware</strong> e <strong>software</strong> 
+        che collaborano per eseguire 
+        operazioni e risolvere problemi. L'hardware rappresenta la parte fisica del computer, mentre il software è 
+        costituito dai programmi che ne gestiscono il funzionamento. Insieme, questi due elementi formano il nucleo di 
+        ogni dispositivo informatico. Ogni sistema informatico è progettato per garantire efficienza, affidabilità e 
+        un’interazione ottimale tra le varie componenti. L'obiettivo principale è raccogliere, archiviare ed 
+        elaborare informazioni per svariati scopi: basti pensare ai sistemi utilizzati per prendere decisioni di 
+        investimento, di marketing, di automazione industriale e tanto altro.`
       />
 
-      <Picture path=`https://vitolavecchia.altervista.org/wp-content/uploads/2018/06/Caratteristiche-e-differenze-tra-Hardware-e-Software-del-computer.png`
-        altText=`Rappresentazione di un sistema informatico`/>
-
-      <Paragraph title=`Hardware` text=`L'hardware di un sistema informatico include tutte le componenti fisiche, dalle unità di elaborazione ai dispositivi di input e output. Questi elementi lavorano insieme per eseguire operazioni logiche, archiviare dati e consentire l'interazione con l'utente.`>
+      <Paragraph title=`Cos'è l'Hardware?` text=`L'hardware di un sistema informatico include tutte le componenti 
+        fisiche, dalle unità di elaborazione ai dispositivi di input e output. Questi elementi lavorano insieme per 
+        eseguire operazioni aritmetiche-logiche, archiviare e gestire fisicamente i dati, come la memorizzazione e 
+        l'invio attraverso una rete. Alcuni esempi di componentistica Hardware sono i seguenti:`>
         <List 
           listElements={[ 
-            { header: `Unità centrale di elaborazione (CPU)`, text: `Il cuore del sistema, che esegue i calcoli e gestisce i dati attraverso il processore e le sue unità logico-aritmetiche.` },
+            { header: `Unità centrale di elaborazione (CPU)`, text: `Il cuore del sistema, che esegue tutte le operazioni aritmetico-logiche attraverso il processore vero e proprio e tutte le unità di supporto, come i registri, l'ALU e tanto altro.` },
             { header: `Memoria`, text: `Dispositivi che conservano i dati temporaneamente o permanentemente, come la RAM (memoria volatile) e gli HDD/SSD (memoria persistente).` },
-            { header: `Dispositivi di I/O`, text: `Tastiere, mouse, monitor e stampanti, che permettono l'interazione tra utente e computer, convertendo dati da e verso il sistema.` },
+            { header: `Dispositivi di I/O`, text: `Tastiere, mouse e monitor che permettono l'interazione tra utente e computer, convertendo dati da e verso il sistema.` },
             { header: `Scheda madre`, text: `Il circuito principale che connette e coordina tutti i componenti hardware, garantendo la comunicazione tra di essi.` },
             { header: `GPU (Unità di elaborazione grafica)`, text: `Un componente essenziale per l'elaborazione grafica avanzata, particolarmente utile nei videogiochi e nella modellazione 3D.` }
           ]} 
         />
       </Paragraph>
 
-      <Paragraph title=`Software` text=`Il software è l'insieme dei programmi che gestiscono l'interazione tra hardware e utente. Senza software, l'hardware non avrebbe funzionalità. Il software si divide in diverse categorie, ognuna con uno scopo specifico.`>
+      <Paragraph title=`Cos'è il Software?` text=`Il software è l'insieme dei programmi, quindi un insieme di istruzioni e dati,
+        che gestiscono l'interazione tra hardware e utente. Senza software, l'hardware sarebbe semplicemente un insieme
+        di componenti senza nessuna funzionalità. Il software si divide in diverse categorie, ognuna con uno scopo specifico.`>
         <List 
           listElements={[ 
             { header: `Sistemi operativi`, text: `Gestiscono le risorse hardware, permettendo l'esecuzione di applicazioni e la gestione dei dati. Esempi: Windows, macOS, Linux.` },
             { header: `Software applicativo`, text: `Programmi destinati a soddisfare esigenze specifiche, come la navigazione web (browser), la scrittura (editor di testo) o il design grafico (Photoshop).` },
             { header: `Software di utilità`, text: `Strumenti che ottimizzano il funzionamento del computer, come antivirus, strumenti di backup e programmi di pulizia del sistema.` },
-            { header: `Firmware`, text: `Software preinstallato nei dispositivi hardware che gestisce le operazioni di basso livello. Esempi: BIOS e firmware degli smartphone.` }
+            { header: `Drivers`, text: `Software installabile sul sistema operativo per fornire un'interfaccia con un certo numero di API
+              allo stesso. In pratica i drivers sono i componenti software che separano sistema operativo da hardware, 
+              garantendo astrazione e indipendenza.` },
+            { header: `Firmware`, text: `Software preinstallato nei dispositivi hardware che gestisce le operazioni di basso livello.` }
           ]} 
         />
       </Paragraph>
 
-      <Paragraph 
-        title=`Interazione tra Hardware e Software` 
-        text=`L'interazione tra hardware e software è essenziale per il funzionamento di qualsiasi sistema informatico.
-         Il software comunica con l'hardware per eseguire operazioni, e l'hardware fornisce i dati necessari al 
-         software per completare i compiti richiesti. Questo processo avviene attraverso driver e interfacce di 
-         programmazione, che facilitano la comunicazione tra i due elementi.`
-      />
-
-      <Paragraph title=`Organizzazione a Strati` text=`L'interazione tra hardware e software non avviene direttamente. 
-        Invece, esiste un'architettura organizzata a strati, dove ogni strato si occupa di un compito specifico.
+      <Paragraph title=`Come avviene l'interazione tra Hardware e Software?` 
+        text=`L'interazione tra hardware e software non avviene direttamente.  
+        Invece, esiste un'architettura <strong>organizzata a strati</strong>, dove ogni strato si occupa di un compito specifico.
         Ogni strato non fa altro che eseguire una 'traduzione' delle operazioni richieste dallo strato superiore. 
         Questa tipologia di approccio garantisce che ogni componente sia indipendente rispetto agli altri. Questo vuol
         dire per esempio che, se ho un computer, posso cambiare arbitrariamente processore senza preoccuparmi del
-        sistema operativo, essendo che non comunicano direttamente. I principali strati sono i seguenti:`>
+        sistema operativo, essendo che non comunicano direttamente. Per fare un esempio, pensiamo a due persone che
+        devono comunicare tra di loro. Potranno farlo se e solo se parlano la stessa lingua (provate a comunicare con
+        un cinese parlando ognuno le proprie lingue). Invece, se inseriamo un traduttore in mezzo, che mettiamo caso,
+        conosce tutte le lingue del mondo, possiamo mettere prendere qualsiasi coppia di persone nel mondo, e riusciranno
+        a comunciare. Inserire delle traduzioni tra le varie entità di un sistema garantisce 
+        <strong>indipendenza</strong> e <strong>separazione</strong> tra le stesse`>
         <SwiperWithParagraphs slides={strati} client:load/>
       </Paragraph>
 

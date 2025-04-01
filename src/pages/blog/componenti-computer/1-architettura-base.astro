@@ -10,12 +10,17 @@ import {Paragraph, Picture, List, Buttons} from '../../../components/componentsD
   <HomeLayout client:load>
 		<h1 class={`text-central primary-color`}>1) Architettura di Von Neumann</h1>
 
-      <Paragraph 
-        title={`Introduzione`} 
-        text={`L'architettura di Von Neumann è un modello di progettazione hardware per computer digitali in cui dati e istruzioni condividono lo stesso spazio di memoria\ 
-              Questo approccio si contrappone all'architettura Harvard\ che separa fisicamente i due tipi di memoria\ Ideata dal matematico ungherese John von Neumann\ 
-              questa architettura ha rivoluzionato il mondo dell'informatica ed è ancora oggi alla base della maggior parte dei moderni computer.`} 
-      />
+    <Paragraph 
+    title={`Cos'è l'architettura di Von Neumann?`} 
+    text={`<strong>L'architettura di Von Neumann</strong> è un modello di progettazione hardware per computer digitali che descrive
+          come sono organizzati i componenti di un computer e come devono comunicare tra di loro. Il funzionamento generale si
+          basa sull'unità di elaborazione centrale, la CPU, che legge le istruzioni dalla memoria, le esegue e mostra i risultati all'utente.
+          Una caratteristica importante di quest'architettura è il fatto che i dati e le istruzioni sono memorizzati nella stessa 
+          memoria, creando un flusso di lavoro più semplice ma con alcuni limiti in termini di prestazioni. 
+          Questo approccio si contrappone all'architettura Harvard, che separa fisicamente i due tipi di memoria.
+          Ideata dal matematico ungherese John von Neumann, questa architettura ha rivoluzionato il mondo dell'informatica ed è ancora oggi alla base della maggior parte dei moderni computer.`} 
+  />
+
 
       <Picture 
         path={`https://i0.wp.com/semiengineering.com/wp-content/uploads/2018/09/Screen-Shot-2017-04-26-at-1.08.57-PM.png?ssl=1`}

@@ -15,16 +15,17 @@ import programmingLanguages from '../../../blogPages/mainConcepts/programmingLan
     <h1 class={`text-central primary-color`}>6: Linguaggi di Programmazione</h1>
 
     <Paragraph 
-      title={`Introduzione`}
+      title={`Cos'è un linguaggion di programmazione?`}
       text={`Un linguaggio di programmazione è un insieme di regole sintattiche e semantiche che definiscono un modo formale 
-      per scrivere programmi. I linguaggi di programmazione permettono agli sviluppatori di comunicare con i computer 
+      per scrivere programmi. I linguaggi di programmazione permettono agli sviluppatori di <strong>comunicare con i computer</strong> 
       per eseguire operazioni, risolvere problemi e creare software. Ogni linguaggio ha il proprio set di comandi, 
       simboli e sintassi, che devono essere seguiti per scrivere codice che il computer possa interpretare ed eseguire.`}
     />
 
     <Paragraph 
-      title={`Paradigmi di Programmazione`}
-      text={`I linguaggi di programmazione sono spesso classificati in base al paradigma che supportano, cioè il modello di programmazione che seguono. Alcuni dei paradigmi principali includono:`}
+      title={`Cos'è un paradigma di programmazione?`}
+      text={`I linguaggi di programmazione sono spesso classificati in base al paradigma che supportano, cioè il 
+      modello di programmazione che seguono. Alcuni dei paradigmi principali includono:`}
     >
       <List 
         listElements={[ 
@@ -52,22 +53,56 @@ import programmingLanguages from '../../../blogPages/mainConcepts/programmingLan
     </Paragraph>
 
     <Paragraph 
-      title={`Traduzione del Codice`} 
+      title={`L'Hardware capisce direttamente il codice scritto dai programmatori?`} 
       text={`Sebbene i linguaggi di programmazione siano il mezzo con cui gli sviluppatori comunicano con i computer, 
-      il codice scritto in un linguaggio di alto livello (come Python, Java o JavaScript) non è direttamente 
-      comprensibile dalla macchina. I computer, infatti, interpretano solo linguaggi di basso livello, come il codice
-      binario, costituito da sequenze di 0 e 1. Per fare in modo che un programma scritto in un linguaggio umano venga 
-      eseguito dal computer, è necessario tradurlo in codice macchina attraverso un processo chiamato compilazione o 
-      interpretazione. Un compilatore è uno strumento che traduce l'intero programma in codice macchina prima che 
-      venga eseguito, generando un file eseguibile. In questo caso, la traduzione avviene in un'unica fase, e 
-      l'esecuzione del programma avviene successivamente. Un interprete, invece, traduce ed esegue il codice riga 
-      per riga, durante l'esecuzione del programma stesso. A differenza del compilatore, l'interprete non crea un 
-      file eseguibile, ma esegue direttamente le istruzioni man mano che le traduce. Questi strumenti sono fondamentali 
-      per consentire al codice scritto dall'uomo di essere trasformato in un formato comprensibile e utilizzabile 
-      dalla macchina.`} 
+      il codice scritto in un linguaggio di alto livello (come Python, Java o JavaScript) <strong>non è direttamente 
+      comprensibile dalla macchina</strong>. I computer, infatti, posso interpretare solamente codice
+      binario, costituito da sequenze di 0 e 1, ed evidentemente i linguaggi di programmazione che utilizziamo non lo
+      sono. Prima di rendere possibile quindi l'esecuzione di un programma, dobbiamo trasformarlo dal codice di alto
+      livello che abbiamo utilizzato a codice binario. Questo è possibile attraverso due meccanismi: <strong>compilazione
+      </strong> e <strong>interpretazione</strong>`} 
     />
 
+    <Paragraph
+      title="La Compilazione"
+      text=`La <strong>compilazione</strong> è il processo attraverso cui si passa da un file di testo contenente le
+      istruzioni scritte in un certo linguaggio di programmazione, ad un file binario contenente le istruzioni in
+      linguaggio macchina che possono essere direttamente eseguite dall'Hardware del computer.Il processo è eseguito
+      da un apposito software chiamato appunto compilatore. Il vantaggio principale della compilazione è la <strong>performance</strong> che
+      si raggiunge in fase di run, ovvero di esecuzione; dall'altre parte, però, abbiamo una dipendenza diretta tra il file
+      compilato e la piattaforma stessa. Questo significa che quel file potrà essere eseguito solamente su quel 
+      determinato hardware perdendo la <strong>portabilità</strong>.`
+    />
+
+    <Paragraph
+      title="L'Interpretazione"
+      text=`L'<strong>interpretazione</strong> è il processo attraverso cui un programma viene eseguito direttamente da un software chiamato 
+      interprete, senza la necessità di una fase di compilazione preventiva. L'interprete analizza ed esegue il codice sorgente 
+      riga per riga, traducendolo in linguaggio macchina al momento dell'esecuzione. In questo modo, otteniamo quello che
+      la compilazione non può darci, ovvero la portabilità, in quanto il codice può direttamente essere eseguito su qualsiasi
+      piattaforma, basta avere l'interprete. Dall'altro canto però, la traduzione delle istruzioni in tempo reale durante
+      l'esecuzione, come si può intuire, va a diminuire la performance generale.`
+    />
+
+    <Paragraph 
+      title="Qual'è l'approccio migliore?"
+      text=`Come succede spesso in ambito informatico e ingegneristico in generale, la risposta a questa domanda è <strong>dipende</strong>.
+      Dipende dal tipo di applicazione che stiamo sviluppando, e quindi dalle caratteristiche che ricerchiamo. Dipende
+      dalla velocità di sviluppo che vogliamo: la compilazione tendenzialmente comporta tempo di sviluppo maggiori in
+      quanto per testare ogni singola modifica, bisogna ogni volta ricompilare tutto quanto, cosa che non succede con l'interpretazione.
+      Dipende anche dall'ambiente in cui ci troviamo: se le risorse Hardware sono limitate e preziose, conviene allora
+      spostarsi sulla compilazione, che è generalmente più ottimizzata per un determinato harware rispetto all'interpretazione
+      e inoltre può essere facilmente adattata.`
+    />
+
+    <Paragraph
+    title="Linguaggi di programmazione più famosi"
+    text=`Nel mondo della programmazione esistono molti linguaggi utilizzati per creare software, siti web, applicazioni mobili e sistemi.Ogni linguaggio ha i suoi punti di forza e viene 
+    scelto in base alle necessità specifiche del progetto. Successivamente ho inserito una lista con i più conosciuti e famosi, 
+    ma ce ne sono tantissimi altri.`>
     <SwiperWithParagraphs slides={programmingLanguages} client:load/>
+</Paragraph>
+
 
     <Buttons 
       goBackButtonDisabled={false} 

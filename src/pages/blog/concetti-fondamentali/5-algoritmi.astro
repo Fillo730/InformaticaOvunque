@@ -12,10 +12,11 @@ import {Paragraph, List, Buttons} from '../../../components/componentsDependenci
     <h1 class={`text-central primary-color`}>5: Algoritmi</h1>
 
     <Paragraph
-      title={`Introduzione`}
-      text={`Un algoritmo è una sequenza finita di istruzioni, ben definite e ordinate, che permettono di risolvere 
+      title={`Cos'è un algoritmo?`}
+      text={`Un algoritmo è una <strong>sequenza finita di istruzioni</strong>, ben definite e ordinate, che permettono di risolvere 
       un problema in un tempo limitato. Gli algoritmi sono alla base di tutte le operazioni che compiamo nel mondo 
-      digitale, dalle ricerche su Internet alla gestione dei dati. Ogni algoritmo deve essere: `}
+      digitale, dalle ricerche su Internet alla gestione dei dati ma non solo: qualsiasi ambito della vita umana, 
+      dalla cucina alla medicina, utilizza quotidianamente algoritmi. Ogni algoritmo deve essere: `}
     >
       <List
         listElements={[
@@ -28,27 +29,29 @@ import {Paragraph, List, Buttons} from '../../../components/componentsDependenci
     </Paragraph>
 
     <Paragraph
-      title={`La Complessità degli Algoritmi`}
+      title={`Cos'è la complessità degli algoritmi?`}
       text={`La complessità degli algoritmi è una misura che esprime quanto un algoritmo sia efficiente in termini di 
       risorse computazionali, come il tempo e la memoria, in funzione della dimensione dell'input. Due dei 
       principali aspetti della complessità sono la complessità temporale e la complessità spaziale. 
-      La complessità temporale indica quanto tempo un algoritmo impiega per completare l'elaborazione in 
+      <strong>La complessità temporale</strong> indica quanto tempo un algoritmo impiega per completare l'elaborazione in 
       relazione alla dimensione dell'input, ed è spesso espressa tramite la notazione Big O 
-      (ad esempio, O(n), O(n^2), O(log n), ecc.). La complessità spaziale, invece, misura la quantità di memoria 
+      (ad esempio, O(n), O(n^2), O(log n), vedere successivamente). <strong>La complessità spaziale</strong>, invece, misura la quantità di memoria 
       richiesta dall'algoritmo durante la sua esecuzione, anch'essa espressa tramite la notazione Big O.`}
     />
 
     <Paragraph
-      title={`Notazione e Studio della Complessità degli Algoritmi`}
-      text={`La notazione Big O è il sistema più comune utilizzato per esprimere la complessità di un algoritmo, 
+      title={`Cos'è la notazione Big O?`}
+      text={`<strong>La notazione Big O</strong> è il sistema più comune utilizzato per esprimere la complessità di un algoritmo, 
       descrivendo come il tempo di esecuzione o l'uso della memoria crescono al variare della dimensione 
       dell'input. La notazione Big O fornisce una stima asintotica, cioè una previsione del comportamento 
       dell'algoritmo quando l'input diventa molto grande. Questa notazione aiuta a confrontare algoritmi 
-      diversi in termini di efficienza, specialmente quando si tratta di grandi quantità di dati.`}
+      diversi in termini di efficienza, specialmente quando si tratta di grandi quantità di dati. Per esempio O(n) significa
+      che il tempo di esecuzione dell'algoritmo cresce linearmente rispetto al crescere dell'input. Quindi, se la
+      dimensione dell'input raddoppia, il tempo di esecuzione raddoppia.`}
     />
 
     <Paragraph
-      title={`Algoritmi di Ordinamento`}
+      title={`Esempio: Algoritmi di Ordinamento`}
       text={`Uno degli esempi più comuni di algoritmi sono quelli di ordinamento. Questi algoritmi hanno lo scopo di 
       organizzare un insieme di dati in un ordine specifico, come crescente o decrescente. Ecco alcuni degli algoritmi 
       di ordinamento più conosciuti:`}
@@ -64,10 +67,16 @@ import {Paragraph, List, Buttons} from '../../../components/componentsDependenci
     </Paragraph>
 
     <Paragraph
-      title={`Conclusione`}
-      text={`Gli algoritmi sono fondamentali nel mondo dell'informatica. Conoscere le loro caratteristiche, come la complessità 
-      e i vari tipi di algoritmi esistenti, è essenziale per capire come ottimizzare i processi computazionali e rendere i sistemi 
-      più efficienti. La scelta dell'algoritmo giusto può fare la differenza in termini di velocità e uso delle risorse.`}
+      title="Esempi nello nostra quotidianità"
+      text=`Gli algoritmi non sono solo strumenti teorici dell’informatica, ma sono presenti in molte attività 
+      quotidiane, spesso senza che ce ne rendiamo conto. Ad esempio, i motori di ricerca come Google utilizzano 
+      complessi <strong>algoritmi di ranking</strong> per restituire i risultati più pertinenti alle nostre ricerche. I social 
+      network come Facebook, Instagram e TikTok sfruttano <strong>algoritmi di raccomandazione</strong> per suggerire contenuti 
+      basati sui nostri interessi e interazioni passate. Anche i sistemi di navigazione GPS, come Google Maps e 
+      Waze, usano <strong>algoritmi di ricerca</strong> del percorso ottimale, come l’algoritmo di Dijkstra o l’algoritmo A*, per 
+      calcolare il tragitto più veloce in base al traffico in tempo reale. Persino gli assistenti vocali come Alexa 
+      e Siri utilizzano <strong>algoritmi avanzati di elaborazione del linguaggio</strong> naturale per interpretare i comandi vocali
+       e rispondere in modo adeguato.`
     />
 
     <Buttons goBackButtonDisabled={false} backPath="/blog/concetti-fondamentali/4-codifica-dei-dati/" 

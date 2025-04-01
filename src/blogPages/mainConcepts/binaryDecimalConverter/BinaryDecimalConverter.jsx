@@ -8,25 +8,37 @@ export default function BinaryDecimalConverter() {
 
   const handleBinaryChange = (e) => {
     const value = e.target.value;
-    if (/^[01]*$/.test(value)) {
-      setBinary(value);
-      setDecimal(value ? parseInt(value, 2).toString() : "");
-      setError("");
-    } else {
-      setError("Inserisci solo 0 e 1 per il binario.");
-    }
+    setBinary(value);
   };
 
   const handleDecimalChange = (e) => {
     const value = e.target.value;
-    if (/^\d*$/.test(value)) {
-      setDecimal(value);
-      setBinary(value ? Number(value).toString(2) : "");
+    setDecimal(value);
+    
+  };
+
+  const handleBinaryToDecimal = () => {
+    if (/^[01]+$/.test(binary)) {
+      setDecimal(binary ? parseInt(binary, 2).toString() : "");
       setError("");
     } else {
-      setError("Inserisci solo numeri validi per il decimale.");
+      setError("Inserisci solo le cifre 0 o 1 per i numeri binari.");
     }
   };
+
+  const handleDecimalToBinary = () => {
+    if (/^\d*$/.test(decimal)) {
+      setBinary(decimal ? Number(decimal).toString(2) : "");
+      setError("");
+    } else {
+      setError("Inserisci solo cifre 0-9 per i numeri decimali.");
+    }
+  };
+
+  const handleClear = () => {
+    setBinary("");
+    setDecimal("");
+  }
 
   return (
     <div className="converter-container">
@@ -38,6 +50,9 @@ export default function BinaryDecimalConverter() {
         placeholder="Inserisci numero binario"
         className="converter-input"
       />
+      <button onClick={handleBinaryToDecimal} className="convert-button">
+        Converti in Decimale
+      </button>
       <input
         type="text"
         value={decimal}
@@ -45,6 +60,14 @@ export default function BinaryDecimalConverter() {
         placeholder="Inserisci numero decimale"
         className="converter-input"
       />
+      <button onClick={handleDecimalToBinary} className="convert-button">
+        Converti in Binario
+      </button>
+      <div className="converter-clearContainer">
+        <button onClick={handleClear} className="convert-button clear">
+          Pulisci
+        </button>
+      </div>
       {error && <p className="converter-error">{error}</p>}
     </div>
   );

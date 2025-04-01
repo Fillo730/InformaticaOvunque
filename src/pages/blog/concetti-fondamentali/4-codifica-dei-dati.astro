@@ -11,16 +11,17 @@ import {Paragraph, Buttons} from '../../../components/componentsDependencies.js'
     <h1 class=`text-central primary-color`>4: La Codifica dei Dati</h1>
 
       <Paragraph 
-        title=`Introduzione` 
+        title=`Perchè la codifica dei dati?` 
         text=`Come già accennato, i computer utilizzano il linguaggio binario per elaborare le informazioni. Ma sorge 
         spontanea una domanda: come è possibile rappresentare tutti i dati che vediamo su uno schermo se la macchina 
         può interpretare solo 0 e 1? Lo stesso vale per i numeri e i caratteri testuali. Ed è proprio qui che entra in 
-        gioco la codifica dei caratteri.`
+        gioco la codifica dei dati. In pratica il concetto è quello di <strong>associare ad una stringa di bit un 
+        simbolo di nostra scelta</strong>, ottenendo una corrispondenza biunivoca.`
       />
 
       <Paragraph 
         title=`Come funziona la codifica?` 
-        text=`La codifica delle informazioni in un computer avviene utilizzando sequenze di bit (0 e 1). Con l bit, è 
+        text=`La codifica delle informazioni in un computer avviene utilizzando <strong>sequenze di bit</strong> (0 e 1). Con l bit, è 
               possibile rappresentare 2<sup>l</sup> combinazioni diverse. Ad esempio, con 1 bit possiamo rappresentare 
               solo due stati (0 e 1), con 2 bit possiamo ottenere 4 combinazioni (00, 01, 10, 11) e così via. In generale, 
               se vogliamo codificare n elementi distinti, dobbiamo scegliere un numero di bit 
@@ -28,22 +29,24 @@ import {Paragraph, Buttons} from '../../../components/componentsDependencies.js'
               qualsiasi altro tipo di dato nei computer. Quindi, per fare un esempio, se vogliamo codificare tutti i
               caratteri dell'alfabeto italiano (26 lettere), abbiamo bisogno di almeno 2<sup>5</sup>=32 bit. In questo
               caso alcuni di essesi saranno non utilizzati, nel senso che associate ad alcune combinazioni di bit non
-              ci sarà nessuna lettera. Il codice in questo caso è detto rindondante.`
+              ci sarà nessuna lettera. Il codice in questo caso è detto rindondante e non abbiamo una corrsipondenza
+              biunivoca.`
       />
 
       <Paragraph 
-        title=`Esempio di Codifica di caratteri: Codifica ASCII` 
+        title=`Storia: Codifica ASCII` 
         text=`Un esempio comune di codifica di caratteri è la codifica **ASCII** (American Standard Code for 
         Information Interchange), che rappresenta ogni carattere alfanumerico con un valore numerico di 7 bit.
         Ad esempio, il carattere 'A' è rappresentato dal numero 65 in ASCII, mentre 'a' corrisponde a 97. 
-        Questa codifica è ampiamente utilizzata nei sistemi informatici per rappresentare testi in modo che possano 
-        essere interpretati e visualizzati dai computer.`
+        Come è facilmente inutuibile, questa tipologia di codifica lascia scoperti tantissimi caratteri e simboli
+        che non appertengono all'alfabeto inglese e che quindi, non potrebbero essere rappresentati all'interno
+        di un computer. Per questo motivo, lo standard di codifica oggi è un altro e prende il nome di Unicode.`
       />
 
       <Paragraph 
         title=`Successore di ASCHII: Unicode`
-        text=`ASCII ha un grosso limite: supporta solo 128 caratteri, il che lo rende inadatto per lingue con alfabetipiù 
-        ampi o caratteri speciali. Per superare questo problema, è stato sviluppato Unicode, uno standard più avanzato 
+        text=`<strong>Unicode</strong> è stato sviluppato Unicode proprio per superare il problema della limitata rappresentazione dei
+        caratteri della codifica ASCII. Esso è uno standard più avanzato 
         che può rappresentare migliaia di caratteri appartenenti a diverse lingue, simboli matematici, emoji e altro ancora.  
         Unicode utilizza diverse codifiche, tra cui **UTF-8**, **UTF-16** e **UTF-32**, con UTF-8 che è oggi la codifica più 
         diffusa grazie alla sua efficienza e compatibilità con ASCII. Oggi Unicode è lo standard globale per la 

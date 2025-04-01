@@ -12,7 +12,7 @@
 }
 
 .converter-container:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .converter-input {
@@ -23,11 +23,36 @@
 }
 
 .converter-input:focus {
-    border-color: #0011ff; 
-    outline: none; 
+    border-color: #0011ff;
+    outline: none;
+}
+
+.convert-button {
+    padding: 10px;
+    background-color: #0011ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.convert-button:hover {
+    background-color: #0033ff;
 }
 
 .converter-error {
     color: red;
     text-align: center;
+}
+
+.converter-clearContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.clear {
+    max-width: 50%;
 }

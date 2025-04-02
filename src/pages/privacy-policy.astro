@@ -1,0 +1,77 @@
+---
+//Layouts
+import { HomeLayout, HtmlLayout } from "../layouts/layoutsDependencies";
+
+//CSSFiles
+import '../contact/Contact.css'
+
+//Varies
+import { Mail } from 'lucide-react';
+---
+
+<HtmlLayout title="Privacy Police | Informatica Ovunque">
+    <HomeLayout client:load>
+        <div>
+            <div class="div-title">
+              <h1>Privacy Policy</h1>
+            </div>
+            <div class='div-text'>
+              <p class='p-text'>
+                Ultimo aggiornamento: Novembre 2014
+              </p>
+          
+              <h3 class='h3-title'>Informazioni raccolte dai visitatori</h3>
+              <p class='p-text'>
+                Come molti altri siti web, vengono archiviati file di log sul server contenenti informazioni come l'indirizzo IP del visitatore,
+                il tipo di browser utilizzato, la pagina di riferimento e l'orario della visita.
+              </p>
+              <p class='p-text'>
+                I cookie possono essere utilizzati per memorizzare le preferenze dei visitatori e migliorare la loro esperienza sul sito.
+                Se viene richiesta la registrazione, potrebbero essere salvati dati come nome utente ed email.
+              </p>
+          
+              <h3 class='h3-title'>Utilizzo delle informazioni</h3>
+              <p class='p-text'>
+                Le informazioni raccolte vengono utilizzate per migliorare l'esperienza dell'utente sul sito, fornendo contenuti personalizzati
+                e, in alcuni casi, annunci pubblicitari.
+              </p>
+              <p class='p-text'>
+                Gli indirizzi email non verranno venduti, affittati o condivisi con terze parti.
+                Potremmo inviare email per aggiornamenti sui nostri servizi o offerte speciali.
+              </p>
+          
+              <h3 class='h3-title'>Opzioni per i visitatori</h3>
+              <p class='p-text'>
+                Se ti sei iscritto a uno dei nostri servizi, puoi annullare l'iscrizione seguendo le istruzioni presenti nelle email ricevute.
+              </p>
+              <p class='p-text'>
+                È possibile bloccare i cookie dalle impostazioni del browser, ma ciò potrebbe limitare alcune funzionalità del sito.
+              </p>
+          
+              <h3 class='h3-title'>Cookie</h3>
+              <p class='p-text'>
+                I cookie sono piccoli file digitali salvati dal browser che permettono di registrare le preferenze dell'utente durante la navigazione.
+                Possono anche essere usati per tracciare le visite di ritorno al sito.
+              </p>
+              <p class='p-text'>
+                Alcune aziende pubblicitarie di terze parti potrebbero utilizzare cookie per tracciare gli utenti.
+              </p>
+          
+              <h3 class='h3-title'>Google Ads</h3>
+              <p class='p-text'>
+                Google, come fornitore di terze parti, utilizza i cookie per mostrare annunci pubblicitari.
+              </p>
+              <p class='p-text'>
+                L'uso del cookie DART da parte di Google consente di mostrare annunci basati sulle visite precedenti degli utenti a siti web.
+                Gli utenti possono disattivare il cookie DART visitando l'informativa sulla privacy della rete di contenuti e annunci di Google.
+              </p>
+          
+              <h3 class='h3-title'>Contattaci</h3>
+              <p class='p-text'>
+                Se hai domande o dubbi riguardo questa Privacy Policy, puoi contattarci tramite email:<br/>
+                <strong><Mail size={20} className="icon" /> Email:</strong> informaticaovunque@gmail.com
+              </p>
+            </div>
+          </div>
+    </HomeLayout>
+</HtmlLayout>

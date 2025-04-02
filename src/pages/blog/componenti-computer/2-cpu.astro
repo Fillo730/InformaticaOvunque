@@ -15,36 +15,47 @@ import slidesData from '../../../blogPages/computerComponents/cpu/slidesData'
       <h1 class=`text-central primary-color`>2: Come funziona il processore (CPU)</h1>
   </div>
 
-  <Paragraph title=`Cos'è?` 
-    text=`La CPU (Central Processing Unit) è il cuore del sistema informatico, spesso paragonata al cervello di un organismo vivente. 
-    Essa si occupa di eseguire i programmi e gestire l'elaborazione dei dati. La CPU carica le informazioni dalla memoria secondaria (come il disco rigido o SSD) alla memoria principale (RAM), 
-    legge ed esegue le istruzioni, e salva i risultati di nuovo nella memoria. Oltre a gestire l'esecuzione dei programmi, coordina le operazioni tra i vari componenti del computer, 
-    come la memoria, la scheda grafica e le periferiche di input/output.`/>
+  <Paragraph title=`Cos'è la CPU?` 
+    text=`La <strong>CPU</strong> è il cuore del sistema informatico. Consiste in un insieme di circuiti elettronici
+    che elaborano informazioni ed eseguono calcoli. Può essere visto come il cervello vero e propria del nostro
+    sistema. Anche se si potrebbe pensare alla CPU come ad un blocco unico, in realtà è composta da molti altri
+    componenti interni, elencati successivamente, che interagiscono tra di loro.`/>
 
-    <Picture path=`https://image-v2.cdn.app.senecalearning.com/2019-11/b9ea0541-4878-4213-928a-0ee3659ff4cb/CPU-min,h_400,q_80,w_640.png`
-      altText=`Immagine CPU`/>
-
-  <Paragraph title=`Struttura` text=`La CPU è composta da alcuni componenti fondamentali, tra cui:`>
-  <List listElements={[
-      {header: `L'Unità di Controllo (CU)`, text: `Gestisce il flusso delle istruzioni e coordina le operazioni tra le altre unità.`},
-      {header: `L'Unità Logico-Aritmetica (ALU)`, text: `Esegue le operazioni aritmetiche e logiche, come somme, sottrazioni e confronti.`},
-      {header: `I Registri`, text: `Piccole aree di memoria all'interno della CPU utilizzate per immagazzinare temporaneamente i dati e le istruzioni durante l'elaborazione.`},
-      {header: `La Cache`, text: `Una memoria ad alta velocità che conserva i dati e le istruzioni più frequentemente utilizzati, per velocizzare l'accesso e migliorare le performance.`},
-      {header: `Il Bus di Dati`, text: `Consente il trasferimento delle informazioni tra i vari componenti della CPU e gli altri dispositivi del computer.`},
-      {header: `Il Clock`, text: `È il componente che sincronizza tutte le operazioni della CPU, fornendo un segnale temporale regolare per coordinare l'esecuzione delle istruzioni.`}
-  ]}/>
-  </Paragraph>
-
-  <SwiperWithParagraphs slides={slidesData} client:load/>
+  <SwiperWithParagraphs slides={slidesData} client:load/> 
 
   <Paragraph title=`Ciclo di esecuzione` text=`Il ciclo di esecuzione della CPU descrive le fasi attraverso le quali la CPU elabora le istruzioni. Un ciclo completo comprende:`>
-      <List listElements={[
-        { header: `Fase di Fetch`, text: `La CPU recupera l'istruzione dalla memoria, utilizzando l'indirizzo fornito dal Program Counter (PC). Questo passaggio implica l'accesso alla memoria e il trasferimento dell'istruzione al registro delle istruzioni.` },
-    { header: `Fase di Decode`, text: `L'istruzione recuperata viene decodificata dall'Unità di Controllo (CU), che determina l'operazione da eseguire e identifica gli operandi necessari.` },
-    { header: `Fase di Execute`, text: `L'ALU esegue l'operazione specificata dall'istruzione, utilizzando gli operandi individuati. I risultati possono essere scritti nei registri o nella memoria.` },
-    { header: `Fase di Write-back`, text: `I risultati dell'operazione vengono scritti nel registro di destinazione o nella memoria, completando il ciclo.` }
-      ]} />
+    <List listElements={[
+      { header: `Fase di Fetch`, text: `La CPU recupera l'istruzione dalla memoria, utilizzando l'indirizzo fornito dal Program Counter (PC). Questo passaggio implica l'accesso alla memoria e il trasferimento dell'istruzione al registro delle istruzioni.` },
+      { header: `Fase di Decode`, text: `L'istruzione recuperata viene decodificata dall'Unità di Controllo (CU), che determina l'operazione da eseguire e identifica gli operandi necessari.` },
+      { header: `Fase di Execute`, text: `L'ALU esegue l'operazione specificata dall'istruzione, utilizzando gli operandi individuati. I risultati possono essere scritti nei registri o nella memoria.` },
+      { header: `Fase di Memory Access`, text: `Se necessario, la CPU accede alla memoria per leggere o scrivere dati. Questa fase è fondamentale per istruzioni di caricamento (load) e memorizzazione (store).` },
+      { header: `Fase di Write-back`, text: `I risultati dell'operazione vengono scritti nel registro di destinazione o nella memoria, completando il ciclo.` }
+    ]} />
   </Paragraph>
+
+  <Paragraph 
+    title="Origine Storica: ENIAC"
+    text=`I computer sono oggi essenziali, ma la loro storia è recente e basata sul contributo di molti pionieri. 
+    La moderna informatica ebbe una svolta durante la Seconda Guerra Mondiale, quando il governo degli Stati Uniti i
+    ncaricò un gruppo dell'Università della Pennsylvania di creare un computer elettronico per calcoli balistici.
+    Nel 1946 nacque <strong>ENIAC</strong>, il primo computer elettronico, progettato da John Mauchly e J. Presper Eckert. 
+    Costò 400.000 dollari (circa 6,7 milioni di dollari attuali) e occupava 140 m², con oltre 17.000 valvole 
+    termoioniche e un sistema di raffreddamento dedicato. Nonostante la sua CPU primitiva, poteva elaborare fino a 
+    5.000 equazioni al secondo.Dopo la guerra, l'ENIAC fu usato per calcoli legati alla costruzione della bomba 
+    all’idrogeno, segnando l'inizio del suo utilizzo nella Guerra Fredda. `/>
+
+  <Paragraph
+    title="Arriviamo a noi: Il transistor e le CPU moderne"
+    text=`Negli anni ‘50, i computer facevano ancora uso di valvole termoioniche, che erano incredibilmente ingombranti e inefficienti.
+     Nel 1953, Richard Grimsdale dell’Università di Manchester creò il primo computer interamente basato su 
+     transistor, eliminando le valvole. All’inizio, i transistor erano fatti di germanio, difficile da purificare e 
+     sensibile alla temperatura. Nel 1954, i Bell Laboratories iniziarono a sperimentare con il silicio, portando 
+     alla creazione del transistor MOSFET da parte di Mohamed Atalia e Dawon Kahng nel 1959. Questo dispositivo 
+     rivoluzionò l’elettronica, diventando il componente più prodotto della storia umana.L’uso dei transistor nelle CPU permise la creazione di computer più piccoli, 
+     efficienti e potenti, segnando una svolta nell’informatica e aprendo la strada all’era moderna dei 
+     microprocessori. A partire dall'innovazione dei transistor MOSFET, che ha permesso di realizzare circuiti
+     integrati sempre più complessi e compatti, le CPU hanno continuato a evolversi grazie a miglioramenti 
+     nella <strong>miniaturizzazione</strong> dei componenti, nell'efficienza energetica e nella velocità di elaborazione.`/>
 
   <Buttons goBackButtonDisabled={false} goNextButtonDisabled={false} backPath=`/blog/componenti-computer/1-architettura-base` 
     nextPath=`/blog/componenti-computer/3-cpu-pipeline`/>

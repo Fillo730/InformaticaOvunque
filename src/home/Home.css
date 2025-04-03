@@ -51,11 +51,11 @@
     font-size: 20px;
   }
   .greetings-container {
-    width: 70%;
+    width: 80%;
     border-top: solid 2px #66aaff;
     margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
@@ -68,5 +68,15 @@
   }
   .home-text-size{
     font-size: 15px;
+  }
+  .greetings-container {
+    width: 80%;
+    border-top: solid 2px #66aaff;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
   }
 }

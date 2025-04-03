@@ -3,7 +3,7 @@ const componentArchitectureArticles = [
     id: "1",
     title: "Architettura base",
     path: "/blog/componenti-computer/1-architettura-base",
-    text: "Cos'è l'architettura di Von Neuman?"
+    text: "Von Neumann e la sua archiettura. Cosa sono?"
   },
   {
     id: "2",
@@ -21,7 +21,7 @@ const componentArchitectureArticles = [
     id: "4",
     title: "Memoria principale (RAM)",
     path: "/blog/componenti-computer/4-ram",
-    text: "Cos'è la memoria principale (RAM)?"
+    text: "Cos'è la RAM? Relazione con la velocità del computer."
   },
   {
     id: "5",

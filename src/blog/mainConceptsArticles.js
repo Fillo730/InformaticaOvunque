@@ -21,7 +21,7 @@ const mainConceptsArticles = [
         id: "4",
         title: "Codifica dei dati",
         path: "/blog/concetti-fondamentali/4-codifica-dei-dati",
-        text: "Cosa significa codificare dei dati?"
+        text: "Come rappresento dati in un computer?"
     },
     {
         id: "5",
@@ -33,7 +33,7 @@ const mainConceptsArticles = [
         id: "6",
         title: "Linguaggi di programmazione",
         path: "/blog/concetti-fondamentali/6-linguaggi-di-programmazione",
-        text: "Cos'è un linguaggio di programmazione?"
+        text: "Cos'è un linguaggio di programmazione? Quali sono?"
     },
     {
         id: "7",

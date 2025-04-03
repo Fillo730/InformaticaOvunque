@@ -61,6 +61,9 @@
     align-items: center;
     margin-top: 40px;
   }
+  .greetings-container-text {
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) { 
@@ -79,5 +82,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+  }
+  .greetings-container-text {
+    text-align: center;
   }
 }

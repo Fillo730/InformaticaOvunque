@@ -33,7 +33,7 @@ const mainConceptsArticles = [
         id: "6",
         title: "Linguaggi di programmazione",
         path: "/blog/concetti-fondamentali/6-linguaggi-di-programmazione",
-        text: "Cos'è un linguaggio di programmazione? Quali sono?"
+        text: "Come si scrivono le istruzioni?"
     },
     {
         id: "7",

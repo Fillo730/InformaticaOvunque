@@ -19,13 +19,13 @@ const componentArchitectureArticles = [
   },
   {
     id: "4",
-    title: "Memoria principale (RAM)",
+    title: "Memoria RAM",
     path: "/blog/componenti-computer/4-ram",
     text: "Cos'è la RAM? Relazione con la velocità del computer."
   },
   {
     id: "5",
-    title: "Memorie (HDD/SSD)",
+    title: "Memorie HDD/SSD",
     path: "/blog/componenti-computer/5-memoria-secondaria",
     text: "Come funziona la memoria secondaria? Cos'è un HHD/SSD?"
   },

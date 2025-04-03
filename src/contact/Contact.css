@@ -41,6 +41,8 @@
   
     .p-text {
       font-size: 1.2rem;
+      margin-right: 5px;
+      margin-left: 5px;
     }
   
     .h3-title {
@@ -59,5 +61,7 @@
   
     .h3-title {
       font-size: 1.4rem;
+      margin-right: 5px;
+      margin-left: 5px;
     }
   }

@@ -44,12 +44,18 @@
 }
 
 @media (max-width: 768px) { 
+  .home-title-size {
+    font-size: 26px;
+  }
   .home-text-size{
     font-size: 22px;
   }
 }
 
 @media (max-width: 480px) { 
+  .home-title-size {
+    font-size: 22px;
+  }
   .home-text-size{
     font-size: 15px;
   }

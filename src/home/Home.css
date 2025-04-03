@@ -62,6 +62,9 @@
     margin-top: 40px;
   }
   .greetings-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
   }
 }
@@ -84,6 +87,9 @@
     margin-top: 40px;
   }
   .greetings-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
   }
 }

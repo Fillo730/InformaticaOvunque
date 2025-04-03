@@ -34,4 +34,30 @@
     color: #0011ff;
   }
   
+  @media (max-width: 768px) { 
+    .div-title h1 {
+      font-size: 2rem; 
+    }
   
+    .p-text {
+      font-size: 1.2rem;
+    }
+  
+    .h3-title {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 480px) { 
+    .div-title h1 {
+      font-size: 1.8rem; 
+    }
+  
+    .p-text {
+      font-size: 1rem;
+    }
+  
+    .h3-title {
+      font-size: 1.4rem;
+    }
+  }

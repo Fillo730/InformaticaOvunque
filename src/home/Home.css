@@ -10,9 +10,9 @@
 }
 
 .greetings-container-text {
-    line-height: 1.5;
-    margin-right: 100px;
+  line-height: 1.5;
 }
+
 
 .curiosity-container {
   width: 70%;
@@ -61,12 +61,6 @@
     align-items: center;
     margin-top: 40px;
   }
-  .greetings-container-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
 }
 
 @media (max-width: 480px) { 
@@ -85,11 +79,5 @@
     justify-content: center;
     align-items: center;
     margin-top: 40px;
-  }
-  .greetings-container-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
   }
 }

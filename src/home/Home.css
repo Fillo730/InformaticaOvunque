@@ -45,16 +45,16 @@
 
 @media (max-width: 768px) { 
   .home-title-size {
-    font-size: 26px;
+    font-size: 23px;
   }
   .home-text-size{
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 480px) { 
   .home-title-size {
-    font-size: 22px;
+    font-size: 18px;
   }
   .home-text-size{
     font-size: 15px;

@@ -22,7 +22,7 @@ function SwiperWithParagraphs({ slides }) {
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className='swiper'>
         {slides.map((slide, index) => (
-          <SwiperSlide key={index} className="swiper-slide">
+          <SwiperSlide key={index}>
             <Paragraph title={slide.title} text={slide.text}>
               {slide.list ? <List listElements={slide.list}/>: ""}
             </Paragraph>

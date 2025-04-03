@@ -21,7 +21,7 @@ const mainConceptsArticles = [
         id: "4",
         title: "Codifica dei dati",
         path: "/blog/concetti-fondamentali/4-codifica-dei-dati",
-        text: "Se il computer conosce solo 0 e 1, come fa a memorizzare caratteri/numeri?"
+        text: "Cosa significa codificare dei dati?"
     },
     {
         id: "5",
@@ -33,7 +33,7 @@ const mainConceptsArticles = [
         id: "6",
         title: "Linguaggi di programmazione",
         path: "/blog/concetti-fondamentali/6-linguaggi-di-programmazione",
-        text: "Cos'è un linguaggio di programmazione? Come viene eseguito dal computer?"
+        text: "Cos'è un linguaggio di programmazione?"
     },
     {
         id: "7",

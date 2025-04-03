@@ -3,7 +3,7 @@ const componentArchitectureArticles = [
     id: "1",
     title: "Architettura base",
     path: "/blog/componenti-computer/1-architettura-base",
-    text: "Chi è Von Neuman? Qual'è l'architettura base di un computer?"
+    text: "Cos'è l'architettura di Von Neuman?"
   },
   {
     id: "2",
@@ -21,13 +21,13 @@ const componentArchitectureArticles = [
     id: "4",
     title: "Memoria principale (RAM)",
     path: "/blog/componenti-computer/4-ram",
-    text: "Cos'è la RAM? Perchè è fondamentale per la velocità del computer?"
+    text: "Cos'è la memoria principale (RAM)?"
   },
   {
     id: "5",
     title: "Memorie (HDD/SSD)",
     path: "/blog/componenti-computer/5-memoria-secondaria",
-    text: "Come funziona la memoria secondaria? Cosa sono gli HDD e gli SSD?"
+    text: "Come funziona la memoria secondaria? Cos'è un HHD/SSD?"
   },
   {
     id: "6",

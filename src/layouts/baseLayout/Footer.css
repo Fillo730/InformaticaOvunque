@@ -12,13 +12,16 @@
 
 .footer-link {
     text-decoration: none;
-    margin-top: 20px;
     color: #ffffff;
     transition: transform 0.3s ease;
 }
 
 .footer-link:hover {
     transform: scale(1.1);
+}
+
+.header-margin-top {
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) { 

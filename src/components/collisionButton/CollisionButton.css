@@ -17,6 +17,7 @@
   overflow: hidden;
   position: relative;
   height: 2.8em;
+  min-height: 2.8em;
   padding-right: 3.3em;
   cursor: pointer;
 }

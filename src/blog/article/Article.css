@@ -9,6 +9,12 @@
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+.card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+}
+
 .content {
   display: flex;
   flex-direction: column;

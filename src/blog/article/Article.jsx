@@ -6,7 +6,7 @@ function Article({ id, title, path, text}) {
     <div className="card">
       <div className="content">
         <p className="para">
-          <h3>{id}: {title}</h3>
+          <label className='card-title'>{id}: {title}</label><br/>
           {text}
         </p>
         <CollisionButton path={path} text="Leggi di più"/>
